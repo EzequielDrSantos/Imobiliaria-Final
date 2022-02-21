@@ -44,33 +44,6 @@ namespace Imobiliaria_604
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            byte[] foto = imgToByteArray(pictureBox1.Image);
-            try
-            {
-                int x = BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, comboBox5.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-                textBox4.Clear();
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-                textBox8.Clear();
-                textBox9.Clear();
-                textBox10.Clear();
-                textBox11.Clear();
-                textBox12.Clear();
-                textBox13.Clear();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro:" + ex, "Dados Não Inseridos");
-            }
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem.ToString() == "Sim")
@@ -104,9 +77,31 @@ namespace Imobiliaria_604
             pictureBox1.Image = Image.FromFile(img);
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            byte[] foto = imgToByteArray(pictureBox1.Image);
+            try
+            {
+                int x = BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, comboBox5.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
+                textBox8.Clear();
+                textBox9.Clear();
+                textBox10.Clear();
+                textBox11.Clear();
+                textBox12.Clear();
+                textBox13.Clear();
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro:" + ex, "Dados Não Inseridos");
+            }
         }
     }
 }

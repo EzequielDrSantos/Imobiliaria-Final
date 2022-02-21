@@ -477,7 +477,6 @@
             this.groupBox1.Size = new System.Drawing.Size(286, 405);
             this.groupBox1.TabIndex = 148;
             this.groupBox1.TabStop = false;
-      //      this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // bunifuButton1
             // 
@@ -654,6 +653,7 @@
             this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton4.TextMarginLeft = 0;
             this.bunifuButton4.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton4.Click += new System.EventHandler(this.bunifuButton4_Click);
             // 
             // Form9
             // 

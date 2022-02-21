@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,26 @@ namespace Imobiliaria_604
         {
             Form15 form15 = new Form15();
             form15.Show();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, comboBox2.Text, Convert.ToInt32(textBox6.Text));
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro:" + ex, "Dados Não Inseridos");
+            }
         }
     }
 }

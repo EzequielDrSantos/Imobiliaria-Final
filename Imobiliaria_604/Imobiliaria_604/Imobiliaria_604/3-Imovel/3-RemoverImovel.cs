@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,5 +18,17 @@ namespace Imobiliaria_604
             InitializeComponent();
         }
 
+        int NºdoImovel = 0;
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Tens certeza madje??", "?", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                int x = BLL.Imovel.deleteImovel(NºdoImovel);
+                dataGridView1.DataSource = BLL.Imovel.Load();
+
+            }
+        }
     }
 }
