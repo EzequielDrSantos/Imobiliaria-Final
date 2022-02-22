@@ -24,5 +24,15 @@ namespace Imobiliaria_604
             form8.Show();
 
         }
+
+        private void Form13_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

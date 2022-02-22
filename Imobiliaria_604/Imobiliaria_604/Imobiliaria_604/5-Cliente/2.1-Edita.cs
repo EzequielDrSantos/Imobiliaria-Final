@@ -19,7 +19,8 @@ namespace Imobiliaria_604
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void button3_Click(object sender, EventArgs e)

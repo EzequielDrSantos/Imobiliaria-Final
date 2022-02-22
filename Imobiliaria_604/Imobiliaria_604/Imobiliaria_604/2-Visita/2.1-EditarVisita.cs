@@ -34,5 +34,10 @@ namespace Imobiliaria_604
             Form12 form12 = new Form12();
             form12.Show();  
         }
+
+        private void EditarVisita_Load(object sender, EventArgs e)
+        {
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 }

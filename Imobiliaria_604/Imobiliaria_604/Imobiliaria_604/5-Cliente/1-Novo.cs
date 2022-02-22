@@ -20,7 +20,8 @@ namespace Imobiliaria_604
 
         private void Form5_Load(object sender, EventArgs e)
         {
-
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -39,13 +40,13 @@ namespace Imobiliaria_604
         {
             try
             {
-                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, comboBox2.Text, Convert.ToInt32(textBox6.Text));
-                textBox1.Clear();
+                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox6.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, comboBox2.Text, Convert.ToInt32(textBox1.Text));
+                textBox6.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
                 textBox4.Clear();
                 textBox5.Clear();
-                textBox6.Clear();
+                textBox1.Clear();
                 
 
             }

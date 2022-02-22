@@ -34,5 +34,10 @@ namespace Imobiliaria_604
         {
           
         }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 }

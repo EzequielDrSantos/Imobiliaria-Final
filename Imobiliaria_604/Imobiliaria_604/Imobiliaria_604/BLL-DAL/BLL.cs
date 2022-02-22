@@ -17,7 +17,8 @@ namespace BusinessLogicLayer
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
                 new SqlParameter("@Nfunc", Nfunc),
-                 new SqlParameter("@Password", Password)
+                new SqlParameter("@Password", Password),
+                
                 };
                 return dal.executarReader("select * from login where Nfunc=@Nfunc and Password=@Password", sqlParams);
             }

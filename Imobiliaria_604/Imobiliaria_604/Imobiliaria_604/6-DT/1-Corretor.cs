@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace Imobiliaria_604
         public Form15()
         {
             InitializeComponent();
+        }
+
+        private void Form15_Load(object sender, EventArgs e)
+        {
+            //dataGridView1.DataSource = BLL.Funcionario.Load();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            Global.row = dataGridView1.Rows[e.RowIndex];
         }
     }
 }

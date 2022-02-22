@@ -51,5 +51,17 @@ namespace Imobiliaria_604
             //string img = openFileDialog1.FileName;
             //pictureBox1.Image = Image.FromFile(img);
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            textBox2.Text=Global.row.Cells["Morada"].Value.ToString();
+
+
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 }

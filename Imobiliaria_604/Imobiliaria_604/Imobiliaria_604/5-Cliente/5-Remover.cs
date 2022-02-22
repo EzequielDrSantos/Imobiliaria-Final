@@ -34,5 +34,16 @@ namespace Imobiliaria_604
 
             }
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = BLL.Cliente.Load();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Global.row = dataGridView1.Rows[e.RowIndex];
+          
+        }
     }
 }

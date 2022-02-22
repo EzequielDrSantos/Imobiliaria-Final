@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,20 @@ namespace Imobiliaria_604
             Form4 form4 = new Form4();
             form4.Show();
             
+        }
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+            
+             dataGridView1.DataSource = BLL.Imovel.Load();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Global.row = dataGridView1.Rows[e.RowIndex];
+            this.Close();
+            Form4 form4 = new Form4();
+            form4.Show();
         }
     }
 }

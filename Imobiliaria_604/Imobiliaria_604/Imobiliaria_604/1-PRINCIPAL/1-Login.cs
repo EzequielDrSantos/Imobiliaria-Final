@@ -29,31 +29,29 @@ namespace Imobiliaria_604
                 MessageBox.Show("ERRO", "?");
 
             }
-         
-            else 
+
+            else
             {
 
                 DataTable dt = BLL.login.loginUtilizador(Convert.ToInt32(textBox1.Text), textBox2.Text);
 
-                try { 
-                Global.perfil = (String)dt.Rows[0][2];
-              
-                if (dt.Rows.Count > 0)
+                try
                 {
-                    Form2 f2 = new Form2();
-                    f2.Show();
-                    this.Visible = false;
-                }
+                    Global.perfil = (String)dt.Rows[0][2];
 
-            }
+                    if (dt.Rows.Count > 0)
+                    {
+                        Form2 f2 = new Form2();
+                        f2.Show();
+                        this.Visible = false;
+                    }
+
+                }
                 catch (InvalidCastException)
                 {
                     errorProvider1.SetError(textBox1, "Alguma coisa está errada");
                 }
             }
-
-
-
 
         }
     }
