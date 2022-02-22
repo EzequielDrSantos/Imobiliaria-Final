@@ -95,7 +95,7 @@ namespace BusinessLogicLayer
 
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
-                                new SqlParameter("@NºdoImovel", NºdoImovel),
+                                new SqlParameter("@NºdoImovel",NºdoImovel),
                                 new SqlParameter("@Morada", Morada),
                                 new SqlParameter("@Numero", Numero),
                                 new SqlParameter("@Andar", Andar),
@@ -132,7 +132,6 @@ namespace BusinessLogicLayer
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
                             new SqlParameter("@NºdoImovel", NºdoImovel),
-                                new SqlParameter("@NºdoImovel", NºdoImovel),
                                 new SqlParameter("@Morada", Morada),
                                 new SqlParameter("@Numero", Numero),
                                 new SqlParameter("@Andar", Andar),

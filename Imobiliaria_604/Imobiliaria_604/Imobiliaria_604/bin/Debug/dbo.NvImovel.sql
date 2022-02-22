@@ -1,25 +1,26 @@
 ﻿CREATE TABLE [dbo].[NvImovel] (
-    [NºdoImovel]     INT            NOT NULL,
+    [IdImovel]     INT            NOT NULL,
     [Morada]         NVARCHAR (MAX) NOT NULL,
     [Numero]         NVARCHAR (5)   NOT NULL,
     [Andar]          NVARCHAR (15)  NOT NULL,
     [CodigoPostal]   NVARCHAR (10)  NOT NULL,
     [AreaBruta]      NVARCHAR (10)  NOT NULL,
     [AreaTotal]      NVARCHAR (10)  NOT NULL,
-    [Quarto]         NCHAR (5)      NOT NULL,
+    [Quarto]         NVARCHAR (5)   NOT NULL,
     [CasaDeBanho]    NVARCHAR (5)   NOT NULL,
     [Elevador]       BIT            NOT NULL,
     [Estacionamento] BIT            NOT NULL,
-    [Eficiencia]     NVARCHAR (50)  NOT NULL,
+    [Eficiencia]     NVARCHAR (5)   NOT NULL,
     [AnoConstrucao]  NVARCHAR (15)  NOT NULL,
     [Distrito]       NVARCHAR (25)  NOT NULL,
     [Cidade]         NVARCHAR (25)  NOT NULL,
     [TipoImovel]     NVARCHAR (15)  NOT NULL,
     [Para]           NVARCHAR (15)  NOT NULL,
     [Preco]          MONEY          NOT NULL,
-    [Nfunc]          INT  NOT NULL,
+    [Nfunc]          NVARCHAR (10)  NOT NULL,
     [Observacao]     NVARCHAR (MAX) NOT NULL,
     [Imagem]         IMAGE          NULL,
-    PRIMARY KEY CLUSTERED ([NºdoImovel] ASC)
+    PRIMARY KEY CLUSTERED ([IdImovel] ASC),
+    CONSTRAINT [FK_NvImovel_ToTable] FOREIGN KEY ([Nfunc]) REFERENCES [dbo].[login] ([Nfunc])
 );
 
