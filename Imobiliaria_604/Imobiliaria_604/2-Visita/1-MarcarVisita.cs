@@ -33,24 +33,23 @@ namespace Imobiliaria_604
         private void bunifuButton4_Click(object sender, EventArgs e)
         {
 
-            //try
-            //{
-            //    BLL.Visita.insertVisita(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text), textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), textBox6.Text, comboBox1.Text);
-            //    textBox2.Clear();
-            //    textBox1.Clear();
-            //    textBox3.Clear();
-            //    textBox4.Clear();
-            //    textBox5.Clear();
-            //    textBox6.Clear();
+            try
+            {
+                BLL.Visita.insertVisita(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, dateTimePicker1.Text);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
 
 
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Erro:" + ex, "Dados Não Inseridos");
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro:" + ex, "Dados Não Inseridos");
+            }
         }
-    
+
 
         private void Form9_Load(object sender, EventArgs e)
         {

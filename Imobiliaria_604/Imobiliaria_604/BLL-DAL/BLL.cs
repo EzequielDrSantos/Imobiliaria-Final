@@ -32,16 +32,15 @@ namespace BusinessLogicLayer
                 return dal.executarReader("select * from Visita ", null);
             }
 
-            static public int insertVisita(int IdVisita, int NumeroC, string NomeC, int NumeroCt, string NomeCt, int Telefone, int NumeroI, string Hora, string Data)
+            static public int insertVisita(int NumeroC, string NomeC, string NomeCt, int Telefone, int NumeroI, string Hora,string Data)
 
             {
 
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
-                                new SqlParameter("@IdVisita", IdVisita),
+                               
                                 new SqlParameter("@NumeroC", NumeroC),
                                 new SqlParameter("@NomeC", NomeC),
-                                new SqlParameter("@NumeroCt", NumeroCt),
                                 new SqlParameter("@NomeCt", NomeCt),
                                 new SqlParameter("@Telefone", Telefone),
                                 new SqlParameter("@NumeroI", NumeroI),
@@ -49,14 +48,14 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Data", Data),
                                 
             };
-                return dal.executarNonQuery("INSERT into Clinete (IdVisita, NumeroC, NomeC, NumeroCt, NomeCt, Telefone, NumeroI, Hora, Data) " +
-                    "VALUES(@IdVisita, @NumeroC, @NomeC, @NumeroCt, @NomeCt, @Telefone, @NumeroI, @Hora, @Data)", sqlParams);
+                return dal.executarNonQuery("INSERT into Visita (NumeroC, NomeC, NomeCt, Telefone, NumeroI, Hora, Data) " +
+                    "VALUES(@NumeroC, @NomeC, @NomeCt, @Telefone, @NumeroI, @Hora, @Data)", sqlParams);
             }
-            static public int updateVisita(int IdVisita, int NumeroC, string NomeC, int NumeroCt, string NomeCt, int Telefone, int NumeroI, string Hora, string Data)
+            static public int updateVisita(int NumeroC, string NomeC, int NumeroCt, string NomeCt, int Telefone, int NumeroI, string Hora, string Data)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
-                                new SqlParameter("@IdVisita", IdVisita),
+                                
                                 new SqlParameter("@NumeroC", NumeroC),
                                 new SqlParameter("@NomeC", NomeC),
                                 new SqlParameter("@NumeroCt", NumeroCt),
@@ -67,7 +66,7 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Data", Data),
                                
                         };
-                return dal.executarNonQuery("update [Visita] set [IdVisita]=@IdVisita, [NumeroC]=@NumeroC,  [NomeC]=@NomeC, [NumeroCT]=@NumeroCt,  [NomeCt]=@NomeCt, [Telefone]=@Telefone, [NumeroI]=@NumeroI,  [Hora]=@Hora where  [Data]=@Data", sqlParams);
+                return dal.executarNonQuery("update [Visita] set [NumeroC]=@NumeroC,  [NomeC]=@NomeC, [NumeroCT]=@NumeroCt,  [NomeCt]=@NomeCt, [Telefone]=@Telefone, [NumeroI]=@NumeroI,  [Hora]=@Hora where  [Data]=@Data", sqlParams);
             }
 
             static public int deleteVisita(int IdVisita)

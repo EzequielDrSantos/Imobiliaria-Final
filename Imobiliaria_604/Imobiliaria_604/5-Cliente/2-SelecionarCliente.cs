@@ -20,10 +20,10 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             Form6 form6 = new Form6();
-            form6.Show(); 
-
+            form6.Show();
+            this.Close();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

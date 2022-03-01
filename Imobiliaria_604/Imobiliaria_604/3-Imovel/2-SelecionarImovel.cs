@@ -31,6 +31,7 @@ namespace Imobiliaria_604
         {
             
              dataGridView1.DataSource = BLL.Imovel.Load();
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

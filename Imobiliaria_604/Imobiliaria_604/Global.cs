@@ -17,17 +17,7 @@ namespace Imobiliaria_604
 
     }
 }
-//---------------------------------------
-//- Remover Imovel                      -
-//- Form1 f5 = new Form1();             -
-//- f5.MdiParent = this;                -
-//- f5.Show();                          -
-//-                                     -
-//- Remver Cliente                      -
-//- Form7 f8 = new Form7();             -
-//- f8.MdiParent = this;                -
-//- f8.Show();                          -
-//---------------------------------------
+
 //Beja
 //
 //    //Aljustrel

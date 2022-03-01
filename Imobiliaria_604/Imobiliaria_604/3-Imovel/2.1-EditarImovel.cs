@@ -22,34 +22,34 @@ namespace Imobiliaria_604
         bool elevador = false;
         bool estacionamento = false;
 
-        //public byte[] imgToByteArray(Image img)
+        public byte[] imgToByteArray(Image img)
 
-        //{
+        {
 
-        //    using (MemoryStream mStream = new MemoryStream())
+            using (MemoryStream mStream = new MemoryStream())
 
-        //    {
+            {
 
-        //        img.Save(mStream, img.RawFormat);
+                img.Save(mStream, img.RawFormat);
 
-        //        return mStream.ToArray();
+                return mStream.ToArray();
 
-        //    }
+            }
 
-        //}
-        //public Image byteArrayToImage(byte[] byteArrayIn)
+        }
+        public Image byteArrayToImage(byte[] byteArrayIn)
 
-        //{
+        {
 
-        //    using (MemoryStream mStream = new MemoryStream(byteArrayIn))
+            using (MemoryStream mStream = new MemoryStream(byteArrayIn))
 
-        //    {
+            {
 
-        //        return Image.FromStream(mStream);
+                return Image.FromStream(mStream);
 
-        //    }
+            }
 
-        //}
+        }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
@@ -96,7 +96,7 @@ namespace Imobiliaria_604
             textBox11.Text = "" + Global.row.Cells[17].Value;
             textBox12.Text = "" + Global.row.Cells[18].Value;
             textBox13.Text = "" + Global.row.Cells[19].Value;
-            //foto = Global.row.Cells[20].;
+            //foto = Global.row.Cells[20].  ;
 
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -141,6 +141,13 @@ namespace Imobiliaria_604
                 estacionamento = true;
             }
             else { estacionamento = false; }
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            //openFileDialog1.ShowDialog();
+            //string img = openFileDialog1.FileName;
+            //pictureBox1.Image = Image.FromFile(img);
         }
     }
 }
