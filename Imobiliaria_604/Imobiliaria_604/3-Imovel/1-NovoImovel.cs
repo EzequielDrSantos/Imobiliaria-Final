@@ -92,7 +92,12 @@ namespace Imobiliaria_604
                 textBox7.Clear();
                 textBox8.Clear();
                 textBox9.Clear();
+                comboBox1.Items.Clear();
+                comboBox2.Items.Clear();
+                comboBox3.Items.Clear();
                 textBox10.Clear();
+                comboBox4.Items.Clear();
+                comboBox5.Items.Clear();
                 textBox11.Clear();
                 textBox12.Clear();
                 textBox13.Clear();

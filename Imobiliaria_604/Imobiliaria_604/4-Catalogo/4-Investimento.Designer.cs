@@ -583,6 +583,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Investimento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INVESTIMENTO";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

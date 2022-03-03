@@ -19,7 +19,7 @@
     [Preco]          MONEY          NOT NULL,
     [Nfunc]          NVARCHAR (10)  NOT NULL,
     [Observacao]     NVARCHAR (MAX) NOT NULL,
-    [Imagem]         IMAGE          NOT NULL,
+    [Imagem]         IMAGE          NULL,
     PRIMARY KEY CLUSTERED ([NºdoImovel] ASC)
 );
 

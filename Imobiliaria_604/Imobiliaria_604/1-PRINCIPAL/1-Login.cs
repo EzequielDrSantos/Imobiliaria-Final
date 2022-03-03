@@ -37,10 +37,9 @@ namespace Imobiliaria_604
 
                 try
                 {
-                    Global.perfil = (String)dt.Rows[0][2];
-
                     if (dt.Rows.Count > 0)
                     {
+                        Global.perfil = (String)dt.Rows[0][1];
                         Form2 f2 = new Form2();
                         f2.Show();
                         this.Visible = false;

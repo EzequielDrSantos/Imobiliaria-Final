@@ -20,7 +20,7 @@ namespace Imobiliaria_604
 
         private void Form15_Load(object sender, EventArgs e)
         {
-            //dataGridView1.DataSource = BLL.Funcionario.Load();
+            dataGridView1.DataSource = BLL.Funcionario.Load();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

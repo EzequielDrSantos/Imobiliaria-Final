@@ -130,11 +130,11 @@
     <Compile Include="2-Visita\1-MarcarVisita.Designer.cs">
       <DependentUpon>1-MarcarVisita.cs</DependentUpon>
     </Compile>
-    <Compile Include="5-Cliente\3-SelecionarProcura.cs">
+    <Compile Include="5-Cliente\3-ProcurarClinete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="5-Cliente\3-SelecionarProcura.Designer.cs">
-      <DependentUpon>3-SelecionarProcura.cs</DependentUpon>
+    <Compile Include="5-Cliente\3-ProcurarClinete.Designer.cs">
+      <DependentUpon>3-ProcurarClinete.cs</DependentUpon>
     </Compile>
     <Compile Include="5-Cliente\4-Remover.cs">
       <SubType>Form</SubType>
@@ -261,8 +261,8 @@
     <EmbeddedResource Include="5-Cliente\2-SelecionarCliente.resx">
       <DependentUpon>2-SelecionarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="5-Cliente\3-SelecionarProcura.resx">
-      <DependentUpon>3-SelecionarProcura.cs</DependentUpon>
+    <EmbeddedResource Include="5-Cliente\3-ProcurarClinete.resx">
+      <DependentUpon>3-ProcurarClinete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="5-Cliente\4-Remover.resx">
       <DependentUpon>4-Remover.cs</DependentUpon>

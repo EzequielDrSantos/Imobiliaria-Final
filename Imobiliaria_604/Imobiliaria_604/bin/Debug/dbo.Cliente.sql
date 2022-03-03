@@ -6,7 +6,8 @@
     [CC]        INT            NOT NULL,
     [Distrito]  NVARCHAR (50)  NOT NULL,
     [Cidade]    NVARCHAR (50)  NOT NULL,
-    [Nfunc]     NVARCHAR (10)  NOT NULL,
+    [Nfunc] NVARCHAR(10) NOT NULL,
+
     PRIMARY KEY CLUSTERED ([IdCliente] ASC)
 );
 

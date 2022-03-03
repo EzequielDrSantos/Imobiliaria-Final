@@ -17,10 +17,6 @@ namespace Imobiliaria_604
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form13 f13 = new Form13();
-            f13.Show();
-        }
+       
     }
 }

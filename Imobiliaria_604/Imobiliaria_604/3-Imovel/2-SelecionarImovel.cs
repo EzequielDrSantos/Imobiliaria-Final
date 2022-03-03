@@ -29,17 +29,12 @@ namespace Imobiliaria_604
 
         private void Form11_Load(object sender, EventArgs e)
         {
-            
              dataGridView1.DataSource = BLL.Imovel.Load();
-            
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Global.row = dataGridView1.Rows[e.RowIndex];
-            //MessageBox.Show("" + Global.row.Cells[0].Value, "");
-
-            
         }
     }
 }

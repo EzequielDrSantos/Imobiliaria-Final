@@ -20,22 +20,22 @@ namespace Imobiliaria_604
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.Close();
             EditarVisita editarVisita = new EditarVisita();
             editarVisita.Show();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //Global.row = dataGridView1.Rows[e.RowIndex];
-            
-            //MessageBox.Show("" + Global.row.Cells["Morada"].Value,"");
+            this.Close();
         }
 
         private void Form16_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = BLL.Visita.Load();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Global.row = dataGridView1.Rows[e.RowIndex];
+        }
+
+       
     }
 }
 

@@ -22,20 +22,13 @@ namespace Imobiliaria_604
         bool elevador = false;
         bool estacionamento = false;
 
-        public byte[] imgToByteArray(Image img)
-
+        public byte[] ImageToByteArray(System.Drawing.Image imageIn)
         {
-
-            using (MemoryStream mStream = new MemoryStream())
-
+            using (var ms = new MemoryStream())
             {
-
-                img.Save(mStream, img.RawFormat);
-
-                return mStream.ToArray();
-
+                imageIn.Save(ms, imageIn.RawFormat);
+                return ms.ToArray();
             }
-
         }
         public Image byteArrayToImage(byte[] byteArrayIn)
 
@@ -59,7 +52,7 @@ namespace Imobiliaria_604
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            //byte[] foto = imgToByteArray(pictureBox1.Image);
+           
             textBox1.Text= "" + Global.row.Cells[0].Value;
             textBox2.Text = "" + Global.row.Cells[1].Value;
             textBox3.Text = "" + Global.row.Cells[2].Value;
@@ -96,8 +89,9 @@ namespace Imobiliaria_604
             textBox11.Text = "" + Global.row.Cells[17].Value;
             textBox12.Text = "" + Global.row.Cells[18].Value;
             textBox13.Text = "" + Global.row.Cells[19].Value;
-            //foto = Global.row.Cells[20].  ;
+            pictureBox2.Image = byteArrayToImage( (byte[])Global.row.Cells[20].Value) ;
 
+           
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -108,20 +102,26 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            //BLL.Imovel.updateNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, comboBox5.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
-            //textBox2.Clear();
-            //textBox1.Clear();
-            //textBox3.Clear();
-            //textBox4.Clear();
-            //textBox5.Clear();
-            //textBox6.Clear();
-            //textBox7.Clear();
-            //textBox8.Clear();
-            //textBox9.Clear();
-            //textBox10.Clear();
-            //textBox11.Clear();
-            //textBox12.Clear();
-            //textBox13.Clear();
+            Image img = pictureBox2.Image;
+
+
+            byte[] foto = ImageToByteArray(img);
+            BLL.Imovel.updateNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, comboBox5.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
+            textBox2.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            comboBox1.Items.Clear();
+            comboBox2.Items.Clear();
+            textBox10.Clear();
+            textBox11.Clear();  
+            textBox12.Clear();
+            textBox13.Clear();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,9 +145,11 @@ namespace Imobiliaria_604
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-            //openFileDialog1.ShowDialog();
-            //string img = openFileDialog1.FileName;
-            //pictureBox1.Image = Image.FromFile(img);
+            openFileDialog1.ShowDialog();
+            string img = openFileDialog1.FileName;
+            pictureBox2.Image = Image.FromFile(img);
+            
         }
+
     }
 }

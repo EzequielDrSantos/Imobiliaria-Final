@@ -18,10 +18,13 @@ namespace Imobiliaria_604
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Global.row = dataGridView1.Rows[e.RowIndex];
-        
+        }
+
+        private void Form10_Load(object sender, EventArgs e)
+        {
             dataGridView1.DataSource = BLL.Visita.Load();
         }
     }

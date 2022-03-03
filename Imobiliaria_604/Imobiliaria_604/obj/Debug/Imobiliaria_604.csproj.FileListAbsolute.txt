@@ -67,7 +67,6 @@ C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_60
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form9.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form12.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form8.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form13.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form7.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form6.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form1.resources
