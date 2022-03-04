@@ -43,7 +43,9 @@ namespace Imobiliaria_604
                 textBox4.Clear();
                 textBox5.Clear();
                 textBox1.Clear();
-                
+                comboBox1.Items.Clear();
+                comboBox2.Items.Clear();
+
 
             }
             catch (Exception ex)

@@ -65,7 +65,7 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Data", Data),
 
                         };
-                return dal.executarNonQuery("update [Visita] set [NumeroC]=@NumeroC,  [NomeC]=@NomeC, [NomeCt]=@NomeCt, [Telefone]=@Telefone, [NumeroI]=@NumeroI,  [Hora]=@Hora, [Data]=@Data ", sqlParams);
+                return dal.executarNonQuery("update [Visita] set [NumeroC]=@NumeroC,  [NomeC]=@NomeC, [NomeCt]=@NomeCt, [Telefone]=@Telefone, [NumeroI]=@NumeroI,  [Hora]=@Hora, [Data]=@Data", sqlParams);
             }
 
             static public int deleteVisita(int IdVisita)
@@ -151,11 +151,47 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Observacao", Observacao),
                                 new SqlParameter("@Imagem", Imagem)
                         };
-                return dal.executarNonQuery("update [NvImoveis] set [NºdoImovel]=@NºdoImovel, " +
+                return dal.executarNonQuery("update [NvImovel] set [NºdoImovel]=@NºdoImovel, " +
                     "[Morada]=@Morada, [Numero]=@Numero, [Andar]=@Andar, [CodigoPostal]=@CodigoPostal, " +
-                    "[AreaBruta]=@AreaBruta, [AreaTotal]=@AreaTotal, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia" +
-                    "[AnoDeConstrucao]=@AnoDeConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
-                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao where [Imagem]=@Imagem", sqlParams);
+                    "[AreaBruta]=@AreaBruta, [AreaTotal]=@AreaTotal, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia, " +
+                    "[AnoConstrucao]=@AnoConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
+                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao, [Imagem]=@Imagem where [NºdoImovel]=@NºdoImovel", sqlParams);
+            }
+
+            static public int updateNvImovel2(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal,
+               string AreaBruta, string AreaTotal, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito,
+               string Cidade, string TipoImovel, string Para, string Preco, string Nfunc,
+               string Observacao)
+            {
+                DAL dal = new DAL();
+                SqlParameter[] sqlParams = new SqlParameter[]{
+                            new SqlParameter("@NºdoImovel", NºdoImovel),
+                                new SqlParameter("@Morada", Morada),
+                                new SqlParameter("@Numero", Numero),
+                                new SqlParameter("@Andar", Andar),
+                                new SqlParameter("@CodigoPostal", CodigoPostal),
+                                new SqlParameter("@AreaBruta", AreaBruta),
+                                new SqlParameter("@AreaTotal", AreaTotal),
+                                new SqlParameter("@Quarto", Quarto),
+                                new SqlParameter("@CasaDebanho", CasaDeBanho),
+                                new SqlParameter("@Elevador", Elevador),
+                                new SqlParameter("@Estacionamento", Estacionamento),
+                                new SqlParameter("@Eficiencia", Eficiencia),
+                                new SqlParameter("@AnoConstrucao", AnoConstrucao),
+                                new SqlParameter("@Distrito", Distrito),
+                                new SqlParameter("@Cidade", Cidade),
+                                new SqlParameter("@TipoImovel", TipoImovel),
+                                new SqlParameter("@Para", Para),
+                                new SqlParameter("@Preco", Preco),
+                                new SqlParameter("@Nfunc", Nfunc),
+                                new SqlParameter("@Observacao", Observacao),
+                               
+                        };
+                return dal.executarNonQuery("update [NvImovel] set [NºdoImovel]=@NºdoImovel, " +
+                    "[Morada]=@Morada, [Numero]=@Numero, [Andar]=@Andar, [CodigoPostal]=@CodigoPostal, " +
+                    "[AreaBruta]=@AreaBruta, [AreaTotal]=@AreaTotal, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia, " +
+                    "[AnoConstrucao]=@AnoConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
+                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao where [NºdoImovel]=@NºdoImovel", sqlParams);
             }
 
             static public int deleteImovel(int NºdoImovel)

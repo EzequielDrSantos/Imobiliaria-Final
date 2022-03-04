@@ -32,13 +32,13 @@ namespace Imobiliaria_604
 
         private void EditarVisita_Load(object sender, EventArgs e)
         {
-            textBox1.Text = "" + Global.row.Cells[0].Value;
-            textBox2.Text = "" + Global.row.Cells[1].Value;
-            textBox3.Text = "" + Global.row.Cells[2].Value;
-            textBox4.Text = "" + Global.row.Cells[3].Value;
-            textBox5.Text = "" + Global.row.Cells[4].Value;
-            comboBox1.Text = "" + Global.row.Cells[5].Value;
-           dateTimePicker1.Value = Convert.ToDateTime(Global.row.Cells[6].Value);
+            textBox1.Text = "" + Global.row.Cells[1].Value;
+            textBox2.Text = "" + Global.row.Cells[2].Value;
+            textBox3.Text = "" + Global.row.Cells[3].Value;
+            textBox4.Text = "" + Global.row.Cells[4].Value;
+            textBox5.Text = "" + Global.row.Cells[5].Value;
+            comboBox1.Text = "" + Global.row.Cells[6].Value;
+           dateTimePicker1.Value = Convert.ToDateTime(Global.row.Cells[7].Value);
             
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -52,6 +52,7 @@ namespace Imobiliaria_604
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
+            comboBox1.Items.Clear();
 
         }
     }
