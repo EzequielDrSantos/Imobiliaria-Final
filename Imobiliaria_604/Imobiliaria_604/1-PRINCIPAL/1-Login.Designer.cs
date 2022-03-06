@@ -145,6 +145,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(47, 338);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(303, 22);
             this.textBox1.TabIndex = 7;
@@ -156,6 +157,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(303, 22);
             this.textBox2.TabIndex = 8;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // errorProvider1
             // 
@@ -181,6 +183,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+         //   this.Enter += new System.EventHandler(this.Login_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

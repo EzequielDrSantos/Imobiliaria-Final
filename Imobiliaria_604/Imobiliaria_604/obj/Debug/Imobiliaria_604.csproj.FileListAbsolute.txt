@@ -87,3 +87,9 @@ C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_60
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.csproj.CopyComplete
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.exe
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.pdb
+C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form13.resources
+C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form20.resources
+C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form21.resources
+C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form22.resources
+C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form23.resources
+C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Configuração.resources

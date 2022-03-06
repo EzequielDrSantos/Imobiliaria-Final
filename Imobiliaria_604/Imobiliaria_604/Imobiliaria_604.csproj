@@ -172,16 +172,16 @@
     <Compile Include="3-Imovel\1-NovoImovel.Designer.cs">
       <DependentUpon>1-NovoImovel.cs</DependentUpon>
     </Compile>
-    <Compile Include="1-PRINCIPAL\2-Principal.cs">
+    <Compile Include="1-Principal\2-Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="1-PRINCIPAL\2-Principal.Designer.cs">
+    <Compile Include="1-Principal\2-Principal.Designer.cs">
       <DependentUpon>2-Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="1-PRINCIPAL\1-Login.cs">
+    <Compile Include="1-Principal\1-Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="1-PRINCIPAL\1-Login.Designer.cs">
+    <Compile Include="1-Principal\1-Login.Designer.cs">
       <DependentUpon>1-Login.cs</DependentUpon>
     </Compile>
     <Compile Include="2-Visita\3-CancelarVisita.cs">
@@ -202,23 +202,59 @@
     <Compile Include="5-Cliente\2-SelecionarCliente.Designer.cs">
       <DependentUpon>2-SelecionarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="6-DT\1-Corretor.cs">
+    <Compile Include="7-DT\1-Corretor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="6-DT\1-Corretor.Designer.cs">
+    <Compile Include="7-DT\1-Corretor.Designer.cs">
       <DependentUpon>1-Corretor.cs</DependentUpon>
     </Compile>
-    <Compile Include="6-DT\2-Cliente.cs">
+    <Compile Include="7-DT\2-Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="6-DT\2-Cliente.Designer.cs">
+    <Compile Include="7-DT\2-Cliente.Designer.cs">
       <DependentUpon>2-Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="6-DT\3-Imovel.cs">
+    <Compile Include="7-DT\3-Imovel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="6-DT\3-Imovel.Designer.cs">
+    <Compile Include="7-DT\3-Imovel.Designer.cs">
       <DependentUpon>3-Imovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6-Funcionario\1-AdicionarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6-Funcionario\1-AdicionarFuncionario.Designer.cs">
+      <DependentUpon>1-AdicionarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6-Funcionario\2-SelecionarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6-Funcionario\2-SelecionarFuncionario.Designer.cs">
+      <DependentUpon>2-SelecionarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6-Funcionario\2.1-Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6-Funcionario\2.1-Editar.Designer.cs">
+      <DependentUpon>2.1-Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6-Funcionario\3-RemoverFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6-Funcionario\3-RemoverFuncionario.Designer.cs">
+      <DependentUpon>3-RemoverFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6-Funcionario\4-Procurar Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6-Funcionario\4-Procurar Funcionario.Designer.cs">
+      <DependentUpon>4-Procurar Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuração.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuração.Designer.cs">
+      <DependentUpon>Configuração.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
@@ -276,13 +312,13 @@
     <EmbeddedResource Include="3-Imovel\2.1-EditarImovel.resx">
       <DependentUpon>2.1-EditarImovel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="1-PRINCIPAL\2-Principal.resx">
+    <EmbeddedResource Include="1-Principal\2-Principal.resx">
       <DependentUpon>2-Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="3-Imovel\1-NovoImovel.resx">
       <DependentUpon>1-NovoImovel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="1-PRINCIPAL\1-Login.resx">
+    <EmbeddedResource Include="1-Principal\1-Login.resx">
       <DependentUpon>1-Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="5-Cliente\1-Novo.resx">
@@ -291,14 +327,32 @@
     <EmbeddedResource Include="2-Visita\3-CancelarVisita.resx">
       <DependentUpon>3-CancelarVisita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="6-DT\1-Corretor.resx">
+    <EmbeddedResource Include="6-Funcionario\1-AdicionarFuncionario.resx">
+      <DependentUpon>1-AdicionarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6-Funcionario\2-SelecionarFuncionario.resx">
+      <DependentUpon>2-SelecionarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6-Funcionario\2.1-Editar.resx">
+      <DependentUpon>2.1-Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6-Funcionario\3-RemoverFuncionario.resx">
+      <DependentUpon>3-RemoverFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6-Funcionario\4-Procurar Funcionario.resx">
+      <DependentUpon>4-Procurar Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7-DT\1-Corretor.resx">
       <DependentUpon>1-Corretor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="6-DT\2-Cliente.resx">
+    <EmbeddedResource Include="7-DT\2-Cliente.resx">
       <DependentUpon>2-Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="6-DT\3-Imovel.resx">
+    <EmbeddedResource Include="7-DT\3-Imovel.resx">
       <DependentUpon>3-Imovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuração.resx">
+      <DependentUpon>Configuração.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

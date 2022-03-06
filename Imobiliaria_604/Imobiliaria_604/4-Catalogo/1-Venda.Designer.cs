@@ -107,6 +107,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.HideSelection = false;
             this.textBox4.Location = new System.Drawing.Point(368, 107);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -126,6 +127,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.HideSelection = false;
             this.textBox5.Location = new System.Drawing.Point(429, 107);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -202,6 +204,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.Enabled = false;
             this.textBox8.HideSelection = false;
             this.textBox8.Location = new System.Drawing.Point(212, 166);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -221,6 +224,7 @@
             // 
             // textBox9
             // 
+            this.textBox9.Enabled = false;
             this.textBox9.HideSelection = false;
             this.textBox9.Location = new System.Drawing.Point(368, 166);
             this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -392,6 +396,7 @@
             // 
             // textBox10
             // 
+            this.textBox10.Enabled = false;
             this.textBox10.HideSelection = false;
             this.textBox10.Location = new System.Drawing.Point(463, 218);
             this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -443,6 +448,7 @@
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.Enabled = false;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "APARTAMENTO",
@@ -457,6 +463,7 @@
             // 
             // checkedListBox2
             // 
+            this.checkedListBox2.Enabled = false;
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
             "VENDA",
@@ -551,6 +558,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Enabled = false;
             this.pictureBox1.Location = new System.Drawing.Point(13, 317);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -561,6 +569,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(12, 24);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;

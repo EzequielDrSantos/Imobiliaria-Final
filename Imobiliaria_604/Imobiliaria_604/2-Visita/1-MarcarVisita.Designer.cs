@@ -70,8 +70,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -247,6 +245,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(13, 90);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox5.MaxLength = 10;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(257, 22);
             this.textBox5.TabIndex = 129;
@@ -471,6 +470,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(7, 90);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(257, 22);
             this.textBox1.TabIndex = 143;
@@ -689,32 +689,12 @@
             this.bunifuButton4.UseDefaultRadiusAndThickness = true;
             this.bunifuButton4.Click += new System.EventHandler(this.bunifuButton4_Click);
             // 
-            // label9
-            // 
-            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
-            this.label9.Location = new System.Drawing.Point(923, 351);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 35);
-            this.label9.TabIndex = 152;
-            this.label9.Visible = false;
-            // 
-            // label13
-            // 
-            this.label13.Image = ((System.Drawing.Image)(resources.GetObject("label13.Image")));
-            this.label13.Location = new System.Drawing.Point(966, 351);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(37, 35);
-            this.label13.TabIndex = 153;
-            this.label13.Visible = false;
-            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(72)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(1050, 404);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.bunifuButton4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -767,7 +747,5 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label13;
     }
 }

@@ -36,5 +36,7 @@ namespace Imobiliaria_604
         {
             Global.row = dataGridView1.Rows[e.RowIndex];
         }
+
+        
     }
 }

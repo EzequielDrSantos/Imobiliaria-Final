@@ -53,7 +53,22 @@ namespace Imobiliaria_604
             textBox6.Clear();
             comboBox1.Items.Clear();
             comboBox2.Items.Clear();
+        }
 
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

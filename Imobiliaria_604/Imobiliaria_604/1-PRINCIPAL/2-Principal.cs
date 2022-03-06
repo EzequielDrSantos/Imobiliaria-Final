@@ -152,5 +152,40 @@ namespace Imobiliaria_604
             form1.MdiParent = this; 
             form1.Show();
         }
+
+        private void adicionarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13();
+            form13.MdiParent = this;
+            form13.Show();
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form20 form20 = new Form20();
+            form20.MdiParent = this;
+            form20.Show();
+        }
+
+        private void procurarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form23 form23 = new Form23();
+            form23.MdiParent = this;
+            form23.Show();
+        }
+
+        private void removerToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form22 form22 = new Form22();
+            form22.MdiParent = this;
+            form22.Show();
+        }
+
+        private void pessualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Configuração configuração = new Configuração();
+            configuração.MdiParent = this;
+            configuração.Show();
+        }
     }
 }

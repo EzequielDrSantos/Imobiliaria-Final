@@ -14,12 +14,12 @@ namespace Imobiliaria_604
 
     public partial class Login : Form
     {
-        
+
         public Login()
         {
             InitializeComponent();
         }
-        
+
 
         private void bunifuButton1_Click(object sender, EventArgs e)
 
@@ -53,6 +53,7 @@ namespace Imobiliaria_604
             }
 
         }
-    }
+
+}
 }
 

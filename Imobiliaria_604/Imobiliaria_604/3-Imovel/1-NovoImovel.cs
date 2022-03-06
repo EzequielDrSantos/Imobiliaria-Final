@@ -1,18 +1,25 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using BusinessLogicLayer;
+using System.Collections;
+using System.Data;
 
 namespace Imobiliaria_604
 {
     public partial class Form3 : Form
     {
         bool elevador = false;  
-        bool estacionamento=false;  
+        bool estacionamento=false;
+
+        public static DataTable DataSource { get; private set; }
+
         public Form3()
         {
             InitializeComponent();
+           
         }
 
         public byte[] imgToByteArray(Image img)
@@ -111,6 +118,7 @@ namespace Imobiliaria_604
 
         private void Form3_Load(object sender, EventArgs e)
         {
+         
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -118,7 +126,76 @@ namespace Imobiliaria_604
             comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        
+        private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            if (char.IsDigit(e.KeyChar) || e.KeyChar.Equals((char)Keys.Back))
+            {
+                TextBox t = (TextBox)sender;
+                string w = Regex.Replace(t.Text, "[^0-9]", string.Empty);
+                if (w == string.Empty) w = "00";
+
+                if (e.KeyChar.Equals((char)Keys.Back))      
+                    w = w.Substring(0, w.Length - 1);      
+                else
+                    w += e.KeyChar;
+                t.Text = string.Format("{0:#,##0.00}", Double.Parse(w) / 100);
+                t.Select(t.Text.Length, 0);
+            }
+            e.Handled = true;
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
 

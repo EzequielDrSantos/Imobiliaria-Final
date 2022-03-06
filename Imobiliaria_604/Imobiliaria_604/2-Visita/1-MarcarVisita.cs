@@ -35,18 +35,18 @@ namespace Imobiliaria_604
             try
             {
                 BLL.Visita.insertVisita(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, dateTimePicker1.Value);
-               label9.Visible=true;
+              
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
                 textBox4.Clear();
                 textBox5.Clear();
-                comboBox1.Items.Clear();
+                
 
             }
             catch (Exception ex)
             {
-                label13.Visible=true;
+               
             }
         }
 
