@@ -14,7 +14,7 @@ namespace Imobiliaria_604
     {
         public static string perfil;
         public static DataGridViewRow row;
-
+        
     }
 }
 

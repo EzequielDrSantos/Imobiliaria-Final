@@ -51,11 +51,12 @@ namespace BusinessLogicLayer
                 return dal.executarNonQuery("INSERT into Visita (NumeroC, NomeC, NomeCt, Telefone, NumeroI, Hora, Data) " +
                     "VALUES(@NumeroC, @NomeC, @NomeCt, @Telefone, @NumeroI, @Hora, @Data)", sqlParams);
             }
-            static public int updateVisita(int NumeroC, string NomeC, string NomeCt, int Telefone, int NumeroI, string Hora, DateTime Data)
+            static public int updateVisita(int IdVisita, int NumeroC, string NomeC, string NomeCt, int Telefone, int NumeroI, string Hora, DateTime Data)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
 
+                                new SqlParameter("@IdVisita", IdVisita),
                                 new SqlParameter("@NumeroC", NumeroC),
                                 new SqlParameter("@NomeC", NomeC),
                                 new SqlParameter("@NomeCt", NomeCt),

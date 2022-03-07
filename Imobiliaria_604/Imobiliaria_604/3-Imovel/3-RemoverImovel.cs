@@ -22,7 +22,7 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Tens certeza madje??", "?", MessageBoxButtons.YesNo);
+            DialogResult res = MessageBox.Show("Tens certeza ??", "?", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
                 int x = BLL.Imovel.deleteImovel(NºdoImovel);

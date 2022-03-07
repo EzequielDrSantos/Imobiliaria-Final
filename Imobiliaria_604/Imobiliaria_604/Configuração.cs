@@ -16,5 +16,16 @@ namespace Imobiliaria_604
         {
             InitializeComponent();
         }
+        string t1;
+        string t2;
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = t1;
+            textBox3.Text = t2;
+            if (t1 == t2)
+            {
+              
+            }
+        }
     }
 }
