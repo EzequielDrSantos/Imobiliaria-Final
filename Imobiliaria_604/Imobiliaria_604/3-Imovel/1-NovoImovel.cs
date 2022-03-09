@@ -13,6 +13,8 @@ namespace Imobiliaria_604
     {
         bool elevador = false;  
         bool estacionamento=false;
+        string teste = "-";
+       
 
         public static DataTable DataSource { get; private set; }
 
@@ -25,30 +27,21 @@ namespace Imobiliaria_604
         public byte[] imgToByteArray(Image img)
 
         {
-
             using (MemoryStream mStream = new MemoryStream())
 
             {
-
                 img.Save(mStream, img.RawFormat);
 
                 return mStream.ToArray();
-
             }
 
         }
         public Image byteArrayToImage(byte[] byteArrayIn)
-
         {
-
             using (MemoryStream mStream = new MemoryStream(byteArrayIn))
-
             {
-
                 return Image.FromStream(mStream);
-
             }
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,10 +49,8 @@ namespace Imobiliaria_604
             if (comboBox1.SelectedItem.ToString() == "Sim")
             {
                 elevador = true;
-
             }
             else { elevador = false; }
-
         }
 
         private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -108,7 +99,6 @@ namespace Imobiliaria_604
                 textBox11.Clear();
                 textBox12.Clear();
                 textBox13.Clear();
-
             }
             catch (Exception ex)
             {
@@ -118,7 +108,17 @@ namespace Imobiliaria_604
 
         private void Form3_Load(object sender, EventArgs e)
         {
-         
+            int idImovel = (int)BLL.IdImovel.IdoImovel();
+            if (idImovel == 0)
+            {
+                textBox1.Text = "1";
+            }
+            else
+            {
+                idImovel = (int)BLL.IdImovel.IdoImovel();
+                textBox1.Text = "" + (idImovel + 1);
+            }
+
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -128,7 +128,7 @@ namespace Imobiliaria_604
 
         private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar))
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -155,7 +155,6 @@ namespace Imobiliaria_604
     {
         e.Handled = true;       
     }
-
         }
 
         private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
@@ -198,8 +197,8 @@ namespace Imobiliaria_604
             }
         }
 
-       
-    }
+        
+}
 }
 
 

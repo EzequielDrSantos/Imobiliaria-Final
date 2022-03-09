@@ -17,9 +17,21 @@ namespace Imobiliaria_604
         {
             InitializeComponent();
         }
+       
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            int idClinete = (int)BLL.IdClinete.IdoCliente();
+            if (idClinete == 0)
+            {
+                textBox1.Text = "1";
+            }
+            else
+            {
+                 idClinete = (int)BLL.IdClinete.IdoCliente();
+                textBox1.Text = "" + (idClinete + 1);
+            }
+
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
         }

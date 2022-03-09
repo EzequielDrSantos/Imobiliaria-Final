@@ -38,9 +38,6 @@ namespace Imobiliaria_604
                 textBox7.Clear();
                 textBox8.Clear();
                 comboBox1.Items.Clear();
-             
-
-
             }
             catch (Exception ex)
             {
@@ -50,6 +47,17 @@ namespace Imobiliaria_604
 
         private void Form13_Load(object sender, EventArgs e)
         {
+            int Nfunc = (int)BLL.IdClinete.IdoCliente();
+            if (Nfunc == 0)
+            {
+                textBox1.Text = "1";
+            }
+            else
+            {
+                 Nfunc = (int)BLL.IdClinete.IdoCliente();
+                textBox1.Text = "" + (Nfunc + 1);
+            }
+
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 

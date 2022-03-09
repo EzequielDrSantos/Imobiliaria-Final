@@ -26,7 +26,7 @@ namespace Imobiliaria_604
         {
             if (textBox1.Text == "" | textBox2.Text == "")
             {
-                MessageBox.Show("ERRO", "?");
+                MessageBox.Show("ERRO", "!");
 
             }
 
@@ -34,9 +34,6 @@ namespace Imobiliaria_604
             {
 
                 DataTable dt = BLL.login.loginUtilizador(Convert.ToInt32(textBox1.Text), textBox2.Text);
-
-                try
-                {
                     if (dt.Rows.Count > 0)
                     {
                         Global.perfil = (String)dt.Rows[0][1];
@@ -44,12 +41,13 @@ namespace Imobiliaria_604
                         f2.Show();
                         this.Visible = false;
                     }
-
-                }
-                catch (InvalidCastException)
+                else
                 {
-                    errorProvider1.SetError(textBox1, "Alguma coisa está errada");
+                    MessageBox.Show("ERRO", "!");
                 }
+
+                
+                
             }
 
         }
