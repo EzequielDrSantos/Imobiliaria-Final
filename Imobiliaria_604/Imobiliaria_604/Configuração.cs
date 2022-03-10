@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,11 @@ namespace Imobiliaria_604
         {
             InitializeComponent();
         }
-       
-       
-        private void bunifuButton4_Click(object sender, EventArgs e)
+
+        private void Configuração_Load(object sender, EventArgs e)
         {
-            
-           
+               int PassANT = (int)BLL.PassANT.PsAnt();
+                textBox1.Text = "" + (PassANT);
         }
     }
 }

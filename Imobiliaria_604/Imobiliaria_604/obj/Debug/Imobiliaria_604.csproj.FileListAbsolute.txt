@@ -85,4 +85,3 @@ C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_60
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form22.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form23.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Configuração.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.csproj.AssemblyReference.cache

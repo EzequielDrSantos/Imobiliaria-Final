@@ -327,13 +327,37 @@ namespace BusinessLogicLayer
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
+
                 };
                 return dal.executarScalar("select Max(Nfunc) from Funcionario ", sqlParams);
             }
         }
 
-
+        public class PassANT
+        {
+            static public Object PsAnt()
+            {
+                DAL dal = new DAL();
+                SqlParameter[] sqlParams = new SqlParameter[]{
+                };
+                return dal.executarScalar("select Password from Funcionario ", sqlParams);
+            }
         }
+
+        public class PassALT
+        {
+            static public int AltPass(string Password)
+            {
+                DAL dal = new DAL();
+                SqlParameter[] sqlParams = new SqlParameter[]{
+                new SqlParameter("@Password", Password)
+            };
+                return dal.executarNonQuery("update [Funcionario] set [Password]=@Password", sqlParams);
+            }
+        }
+
+
+    }
     }
 
     
