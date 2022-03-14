@@ -86,45 +86,6 @@ namespace Imobiliaria_604
             
         }
 
-        private void vendaToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //Catalago Venda 
-            Venda f10 = new Venda();
-            f10.MdiParent = this;
-            f10.Show();
-        }
-
-        private void compraToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //Catalago Compra 
-            Compra f12 = new Compra();
-            f12.MdiParent = this;
-            f12.Show();
-        }
-
-        private void arrendarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Catalago Arrendar
-            Form14 f13 = new Form14();
-            f13.MdiParent = this;
-            f13.Show();
-        }
-
-        private void investimentoToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //Catalago Investimentos
-            Investimento f14 = new Investimento();
-            f14.MdiParent = this;
-            f14.Show();
-        }
-
-        private void todosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form17 form17 = new Form17();
-            form17.MdiParent = this;
-            form17.Show();
-        }
-
         private void cancelarVisitaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CancelarVisita cancelarVisita = new CancelarVisita();
@@ -181,11 +142,5 @@ namespace Imobiliaria_604
             form22.Show();
         }
 
-        private void pessualToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Configuração configuração = new Configuração();
-            configuração.MdiParent = this;
-            configuração.Show();
-        }
-    }
+}
 }

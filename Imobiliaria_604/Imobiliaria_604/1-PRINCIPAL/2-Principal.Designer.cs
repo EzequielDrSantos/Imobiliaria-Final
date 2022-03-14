@@ -39,12 +39,6 @@
             this.novoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.removerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.catalogoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.vendaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.compraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.arrendarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.investimentoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.todosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.edittarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +49,6 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pessualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.xuiFlatMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,10 +66,8 @@
             this.xuiFlatMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.visitaToolStripMenuItem,
             this.imoveisToolStripMenuItem,
-            this.catalogoToolStripMenuItem1,
             this.clientesToolStripMenuItem1,
-            this.funcionarioToolStripMenuItem,
-            this.pessualToolStripMenuItem});
+            this.funcionarioToolStripMenuItem});
             this.xuiFlatMenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.xuiFlatMenuStrip1.Name = "xuiFlatMenuStrip1";
             this.xuiFlatMenuStrip1.SelectedBackColor = System.Drawing.Color.DarkOrchid;
@@ -167,59 +158,6 @@
             this.removerToolStripMenuItem1.Visible = false;
             this.removerToolStripMenuItem1.Click += new System.EventHandler(this.removerToolStripMenuItem1_Click);
             // 
-            // catalogoToolStripMenuItem1
-            // 
-            this.catalogoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vendaToolStripMenuItem1,
-            this.compraToolStripMenuItem1,
-            this.arrendarToolStripMenuItem,
-            this.investimentoToolStripMenuItem1,
-            this.todosToolStripMenuItem});
-            this.catalogoToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.catalogoToolStripMenuItem1.Name = "catalogoToolStripMenuItem1";
-            this.catalogoToolStripMenuItem1.Size = new System.Drawing.Size(120, 96);
-            this.catalogoToolStripMenuItem1.Text = "Catalogo";
-            // 
-            // vendaToolStripMenuItem1
-            // 
-            this.vendaToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.vendaToolStripMenuItem1.Name = "vendaToolStripMenuItem1";
-            this.vendaToolStripMenuItem1.Size = new System.Drawing.Size(234, 36);
-            this.vendaToolStripMenuItem1.Text = "Venda";
-            this.vendaToolStripMenuItem1.Click += new System.EventHandler(this.vendaToolStripMenuItem1_Click);
-            // 
-            // compraToolStripMenuItem1
-            // 
-            this.compraToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.compraToolStripMenuItem1.Name = "compraToolStripMenuItem1";
-            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(234, 36);
-            this.compraToolStripMenuItem1.Text = "Compra";
-            this.compraToolStripMenuItem1.Click += new System.EventHandler(this.compraToolStripMenuItem1_Click);
-            // 
-            // arrendarToolStripMenuItem
-            // 
-            this.arrendarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.arrendarToolStripMenuItem.Name = "arrendarToolStripMenuItem";
-            this.arrendarToolStripMenuItem.Size = new System.Drawing.Size(234, 36);
-            this.arrendarToolStripMenuItem.Text = "Arrendar";
-            this.arrendarToolStripMenuItem.Click += new System.EventHandler(this.arrendarToolStripMenuItem_Click);
-            // 
-            // investimentoToolStripMenuItem1
-            // 
-            this.investimentoToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.investimentoToolStripMenuItem1.Name = "investimentoToolStripMenuItem1";
-            this.investimentoToolStripMenuItem1.Size = new System.Drawing.Size(234, 36);
-            this.investimentoToolStripMenuItem1.Text = "Investimento";
-            this.investimentoToolStripMenuItem1.Click += new System.EventHandler(this.investimentoToolStripMenuItem1_Click);
-            // 
-            // todosToolStripMenuItem
-            // 
-            this.todosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.todosToolStripMenuItem.Name = "todosToolStripMenuItem";
-            this.todosToolStripMenuItem.Size = new System.Drawing.Size(234, 36);
-            this.todosToolStripMenuItem.Text = "Todos";
-            this.todosToolStripMenuItem.Click += new System.EventHandler(this.todosToolStripMenuItem_Click);
-            // 
             // clientesToolStripMenuItem1
             // 
             this.clientesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -236,7 +174,7 @@
             // 
             this.novoToolStripMenuItem3.ForeColor = System.Drawing.Color.White;
             this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
-            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(197, 36);
+            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(224, 36);
             this.novoToolStripMenuItem3.Text = "Novo";
             this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
             // 
@@ -244,7 +182,7 @@
             // 
             this.edittarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.edittarToolStripMenuItem.Name = "edittarToolStripMenuItem";
-            this.edittarToolStripMenuItem.Size = new System.Drawing.Size(197, 36);
+            this.edittarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.edittarToolStripMenuItem.Text = "Editar ";
             this.edittarToolStripMenuItem.Click += new System.EventHandler(this.edittarToolStripMenuItem_Click);
             // 
@@ -252,7 +190,7 @@
             // 
             this.procurarToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.procurarToolStripMenuItem1.Name = "procurarToolStripMenuItem1";
-            this.procurarToolStripMenuItem1.Size = new System.Drawing.Size(197, 36);
+            this.procurarToolStripMenuItem1.Size = new System.Drawing.Size(224, 36);
             this.procurarToolStripMenuItem1.Text = "Procurar";
             this.procurarToolStripMenuItem1.Click += new System.EventHandler(this.procurarToolStripMenuItem1_Click);
             // 
@@ -260,7 +198,7 @@
             // 
             this.removerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
-            this.removerToolStripMenuItem.Size = new System.Drawing.Size(197, 36);
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem.Text = "Remover ";
             this.removerToolStripMenuItem.Visible = false;
             this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click);
@@ -281,7 +219,7 @@
             // 
             this.adicionarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.adicionarToolStripMenuItem.Name = "adicionarToolStripMenuItem";
-            this.adicionarToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.adicionarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.adicionarToolStripMenuItem.Text = "Adicionar";
             this.adicionarToolStripMenuItem.Click += new System.EventHandler(this.adicionarToolStripMenuItem_Click);
             // 
@@ -289,7 +227,7 @@
             // 
             this.editarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
@@ -297,7 +235,7 @@
             // 
             this.procurarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.procurarToolStripMenuItem.Name = "procurarToolStripMenuItem";
-            this.procurarToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.procurarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.procurarToolStripMenuItem.Text = "Procurar";
             this.procurarToolStripMenuItem.Click += new System.EventHandler(this.procurarToolStripMenuItem_Click);
             // 
@@ -305,17 +243,9 @@
             // 
             this.removerToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.removerToolStripMenuItem2.Name = "removerToolStripMenuItem2";
-            this.removerToolStripMenuItem2.Size = new System.Drawing.Size(200, 36);
+            this.removerToolStripMenuItem2.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem2.Text = "Remover";
             this.removerToolStripMenuItem2.Click += new System.EventHandler(this.removerToolStripMenuItem2_Click);
-            // 
-            // pessualToolStripMenuItem
-            // 
-            this.pessualToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.pessualToolStripMenuItem.Name = "pessualToolStripMenuItem";
-            this.pessualToolStripMenuItem.Size = new System.Drawing.Size(164, 96);
-            this.pessualToolStripMenuItem.Text = "Configuração";
-            this.pessualToolStripMenuItem.Click += new System.EventHandler(this.pessualToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -361,12 +291,6 @@
         private System.Windows.Forms.ToolStripMenuItem imoveisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem vendaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem compraToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem arrendarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem investimentoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem todosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem edittarToolStripMenuItem;
@@ -380,6 +304,5 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procurarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem pessualToolStripMenuItem;
     }
 }

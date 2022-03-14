@@ -13,8 +13,8 @@ namespace Imobiliaria_604
     {
         bool elevador = false;  
         bool estacionamento=false;
-        string teste = "-";
-       
+        int IDistrito;
+
 
         public static DataTable DataSource { get; private set; }
 
@@ -108,6 +108,17 @@ namespace Imobiliaria_604
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            //Distrito
+            DataTable dis = BLL.Distrito.Distritos();
+            comboBox4.DataSource = dis;
+            comboBox4.DisplayMember = "NomeDistrito";
+
+            //Comnselho
+            //DataTable cons = BLL.Conselho.Conselhoo();
+            //comboBox5.DataSource = cons;
+            //comboBox5.DisplayMember = "Conselho";
+
+            //NºImvovel
             int idImovel = (int)BLL.IdImovel.IdoImovel();
             if (idImovel == 0)
             {
@@ -197,8 +208,11 @@ namespace Imobiliaria_604
             }
         }
 
-        
-}
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
 
 

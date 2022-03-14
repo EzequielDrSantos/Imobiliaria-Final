@@ -49,11 +49,6 @@ C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_60
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.csproj.SuggestedBindingRedirects.cache
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form10.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form11.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Venda.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Compra.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form14.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Investimento.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form17.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form16.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.EditarVisita.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form9.resources
@@ -84,4 +79,3 @@ C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_60
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form21.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form22.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form23.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Configuração.resources

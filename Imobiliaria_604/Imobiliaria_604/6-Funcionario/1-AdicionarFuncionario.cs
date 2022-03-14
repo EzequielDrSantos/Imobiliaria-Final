@@ -18,6 +18,8 @@ namespace Imobiliaria_604
             InitializeComponent();
         }
 
+        bool Cargo;
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Enabled = true;
@@ -26,9 +28,18 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+
+            
+            if (comboBox1.SelectedItem.ToString() == "Sim")
+            {
+                Cargo = true;
+            }
+            else { Cargo = false; }
+
+
             try
             {
-                int x = BLL.Funcionario.insertFuncionario(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox8.Text);
+                int x = BLL.Funcionario.insertFuncionario(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text), Convert.ToInt32(textBox5.Text), Convert.ToBoolean(comboBox1.Text), textBox8.Text);
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();

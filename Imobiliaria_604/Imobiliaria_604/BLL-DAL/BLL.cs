@@ -253,7 +253,7 @@ namespace BusinessLogicLayer
                 return dal.executarReader("select * from Funcionario ", null);
             }
 
-            static public int insertFuncionario(int Nfunc, string Nome, string Email, int Telefone, int CC, int NIF, int NIB, string Cargo, string Password)
+            static public int insertFuncionario(int Nfunc, string Nome, string Email, int Telefone, int CC, int NIF, int NIB, bool Cargo, string Password)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -333,31 +333,31 @@ namespace BusinessLogicLayer
             }
         }
 
-        public class PassANT
+        public class Distrito
         {
-            static public Object PsAnt()
+            static public DataTable Distritos()
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
+
                 };
-                return dal.executarScalar("select Password from Funcionario ", sqlParams);
+                return dal.executarReader("select NomeDistrito from Distrito ", sqlParams);
             }
         }
 
-        public class PassALT
+        public class Conselho
         {
-            static public int AltPass(string Password)
+            static public DataTable Conselhoo(int IDistrito)
             {
-                DAL dal = new DAL();
+                    DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
-                new SqlParameter("@Password", Password)
-            };
-                return dal.executarNonQuery("update [Funcionario] set [Password]=@Password", sqlParams);
+                                new SqlParameter("@IDistrito", IDistrito ),
+                };
+                return dal.executarReader("select Conselho from Conselhos WHERE IDistrito=@IDistrito", sqlParams);
             }
         }
 
-
-    }
-    }
+ }
+ }
 
     
