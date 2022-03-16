@@ -21,6 +21,9 @@ namespace Imobiliaria_604
         private void Form23_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = BLL.Funcionario.Load();
+
+            dataGridView1.Columns["Cargo"].Visible = false;
+            dataGridView1.Columns["Password"].Visible = false;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

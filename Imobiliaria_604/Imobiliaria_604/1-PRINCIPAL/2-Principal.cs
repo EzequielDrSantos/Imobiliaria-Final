@@ -142,5 +142,9 @@ namespace Imobiliaria_604
             form22.Show();
         }
 
-}
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

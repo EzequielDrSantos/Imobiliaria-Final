@@ -21,7 +21,11 @@ namespace Imobiliaria_604
         private void Form20_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = BLL.Funcionario.Load();
+
+             dataGridView1.Columns["Cargo"].Visible = false;
+            dataGridView1.Columns["Password"].Visible = false;
         }
+        
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -33,6 +37,11 @@ namespace Imobiliaria_604
             Form21 form21 = new Form21();
             form21.Show();
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
