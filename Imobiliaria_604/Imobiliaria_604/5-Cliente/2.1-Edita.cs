@@ -27,11 +27,11 @@ namespace Imobiliaria_604
             textBox4.Text = "" + Global.row.Cells[3].Value;
             textBox5.Text = "" + Global.row.Cells[4].Value;
             comboBox1.Text = "" + Global.row.Cells[5].Value;
-            comboBox2.Text = "" + Global.row.Cells[6].Value;
+            textBox14.Text = "" + Global.row.Cells[6].Value;
             textBox6.Text = "" + Global.row.Cells[7].Value;
              
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            
         }
 
        
@@ -44,7 +44,7 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            BLL.Cliente.updateCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, comboBox2.Text, Convert.ToInt32(textBox6.Text));
+            BLL.Cliente.updateCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToInt32(textBox6.Text));
             textBox2.Clear();
             textBox1.Clear();
             textBox3.Clear();
@@ -52,7 +52,7 @@ namespace Imobiliaria_604
             textBox5.Clear();
             textBox6.Clear();
             comboBox1.Items.Clear();
-            comboBox2.Items.Clear();
+            textBox14.Clear();
         }
 
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)

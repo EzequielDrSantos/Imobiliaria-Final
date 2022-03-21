@@ -38,7 +38,7 @@ namespace Imobiliaria_604
         {
             try
             {
-                BLL.Visita.insertVisita(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, dateTimePicker1.Value);
+                BLL.Visita.insertVisita(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, dateTimePicker1.Value, Convert.ToBoolean(textBox6.Text));
               
                 textBox1.Clear();
                 textBox2.Clear();
@@ -57,6 +57,8 @@ namespace Imobiliaria_604
 
         private void Form9_Load(object sender, EventArgs e)
         {
+            textBox6.Text = "True";
+
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
@@ -65,5 +67,7 @@ namespace Imobiliaria_604
             Form5 form5 = new Form5();
             form5.Show();   
         }
+
+       
     }
 }

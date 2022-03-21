@@ -33,6 +33,8 @@ namespace Imobiliaria_604
 
         private void EditarVisita_Load(object sender, EventArgs e)
         {
+            textBox6.Text = "True";
+
             id = (int)Global.row.Cells[0].Value;
             textBox1.Text = "" + Global.row.Cells[1].Value;
             textBox2.Text = "" + Global.row.Cells[2].Value;
@@ -48,7 +50,7 @@ namespace Imobiliaria_604
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            BLL.Visita.updateVisita(id, Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, dateTimePicker1.Value);
+            BLL.Visita.updateVisita(id, Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, dateTimePicker1.Value,Convert.ToBoolean(textBox6.Text));
             textBox2.Clear();
             textBox1.Clear();
             textBox3.Clear();

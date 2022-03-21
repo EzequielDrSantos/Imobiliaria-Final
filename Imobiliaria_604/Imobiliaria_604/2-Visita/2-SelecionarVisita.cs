@@ -28,10 +28,14 @@ namespace Imobiliaria_604
         private void Form16_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = BLL.Visita.Load();
+            dataGridView1.Columns["Atividade"].Visible = false;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+            
+
             Global.row = dataGridView1.Rows[e.RowIndex];
         }
 

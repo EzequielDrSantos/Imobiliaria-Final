@@ -70,6 +70,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -689,12 +690,23 @@
             this.bunifuButton4.UseDefaultRadiusAndThickness = true;
             this.bunifuButton4.Click += new System.EventHandler(this.bunifuButton4_Click);
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(754, 351);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox6.MaxLength = 10;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(257, 22);
+            this.textBox6.TabIndex = 186;
+            this.textBox6.Visible = false;
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(72)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(1050, 404);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.bunifuButton4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -747,5 +759,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }

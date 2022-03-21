@@ -20,13 +20,16 @@ namespace Imobiliaria_604
 
         private void Form15_Load(object sender, EventArgs e)
         {
+            //dataGridView1.Columns["Cargo"].Visible = false;
+            //dataGridView1.Columns["Password"].Visible = false;
+
             dataGridView1.DataSource = BLL.Funcionario.Load();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView1.Columns["Cargo"].Visible = false;
-            dataGridView1.Columns["Password"].Visible = false;
+           
+
             Global.row = dataGridView1.Rows[e.RowIndex];
         }
     }

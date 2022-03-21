@@ -80,7 +80,7 @@ namespace Imobiliaria_604
             byte[] foto = imgToByteArray(pictureBox1.Image);
             try
             {
-                BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.Text, textBox10.Text, comboBox4.Text, comboBox5.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
+                BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.Text, textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
                 textBox2.Clear();
                 textBox1.Clear();
                 textBox3.Clear();
@@ -92,10 +92,10 @@ namespace Imobiliaria_604
                 textBox9.Clear();
                 comboBox1.Items.Clear();
                 comboBox2.Items.Clear();
-                comboBox3.Items.Clear();
                 textBox10.Clear();
+                comboBox3.Items.Clear();
                 comboBox4.Items.Clear();
-                comboBox5.Items.Clear();
+                textBox14.Clear();
                 textBox11.Clear();
                 textBox12.Clear();
                 textBox13.Clear();
@@ -113,10 +113,7 @@ namespace Imobiliaria_604
             comboBox4.DataSource = dis;
             comboBox4.DisplayMember = "NomeDistrito";
 
-            //Comnselho
-            //DataTable cons = BLL.Conselho.Conselhoo();
-            //comboBox5.DataSource = cons;
-            //comboBox5.DisplayMember = "Conselho";
+            
 
             //NºImvovel
             int idImovel = (int)BLL.IdImovel.IdoImovel();
@@ -134,7 +131,7 @@ namespace Imobiliaria_604
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
+            
         }
 
         private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
@@ -206,6 +203,15 @@ namespace Imobiliaria_604
             {
                 e.Handled = true;
             }
+        }
+
+        private void textBox14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)

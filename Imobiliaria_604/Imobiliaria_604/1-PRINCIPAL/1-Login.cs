@@ -24,6 +24,7 @@ namespace Imobiliaria_604
         private void bunifuButton1_Click(object sender, EventArgs e)
 
         {
+           
             if (textBox1.Text == "" | textBox2.Text == "")
             {
                 MessageBox.Show("ERRO", "!");

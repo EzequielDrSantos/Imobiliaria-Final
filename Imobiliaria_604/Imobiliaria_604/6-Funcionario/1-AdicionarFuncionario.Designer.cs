@@ -49,7 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -68,12 +67,13 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Sim",
-            "Não"});
+            "Administrador",
+            "Corretor"});
             this.comboBox1.Location = new System.Drawing.Point(12, 212);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(161, 24);
             this.comboBox1.TabIndex = 275;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -164,7 +164,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 22);
+            this.textBox1.Size = new System.Drawing.Size(139, 22);
             this.textBox1.TabIndex = 263;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
@@ -178,7 +178,7 @@
             this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
             this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
             this.bunifuButton1.ButtonText = "ADICIONAR";
-            this.bunifuButton1.ButtonTextMarginLeft = 0;
+            this.bunifuButton1.ButtonTextMarginLeft = 5;
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -229,7 +229,7 @@
             this.bunifuButton1.Size = new System.Drawing.Size(280, 39);
             this.bunifuButton1.TabIndex = 261;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton1.TextMarginLeft = 0;
+            this.bunifuButton1.TextMarginLeft = 5;
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
@@ -271,16 +271,6 @@
             this.label5.TabIndex = 282;
             this.label5.Text = "NIB:";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(331, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(21, 23);
-            this.button1.TabIndex = 284;
-            this.button1.Text = "🚮";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(189, 214);
@@ -307,7 +297,6 @@
             this.ClientSize = new System.Drawing.Size(518, 310);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox6);
@@ -353,7 +342,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label7;
     }

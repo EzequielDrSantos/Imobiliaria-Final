@@ -17,29 +17,17 @@ namespace Imobiliaria_604
         {
             InitializeComponent();
         }
-
-        bool Cargo;
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            textBox1.Enabled = true;
-            textBox1.Text = "";
-        }
+        bool adm = false;
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
-            
-            if (comboBox1.SelectedItem.ToString() == "Sim")
-            {
-                Cargo = true;
-            }
-            else { Cargo = false; }
+          
 
 
             try
             {
-                int x = BLL.Funcionario.insertFuncionario(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text), Convert.ToInt32(textBox5.Text), Convert.ToBoolean(comboBox1.Text), textBox8.Text);
+                int x = BLL.Funcionario.insertFuncionario(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text), Convert.ToInt32(textBox5.Text), adm, textBox8.Text);
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
@@ -49,6 +37,7 @@ namespace Imobiliaria_604
                 textBox7.Clear();
                 textBox8.Clear();
                 comboBox1.Items.Clear();
+               
             }
             catch (Exception ex)
             {
@@ -58,16 +47,17 @@ namespace Imobiliaria_604
 
         private void Form13_Load(object sender, EventArgs e)
         {
-            int Nfunc = (int)BLL.IdClinete.IdoCliente();
-            if (Nfunc == 0)
+            int idClinete = (int)BLL.IdFuncionario.IdoFuncionario();
+            if (idClinete == 0)
             {
                 textBox1.Text = "1";
             }
             else
             {
-                 Nfunc = (int)BLL.IdClinete.IdoCliente();
-                textBox1.Text = "" + (Nfunc + 1);
+                idClinete = (int)BLL.IdFuncionario.IdoFuncionario();
+                textBox1.Text = "" + (idClinete + 1);
             }
+
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
@@ -109,6 +99,18 @@ namespace Imobiliaria_604
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.ToString() == "Administrador")
+            {
+                adm = true;
+            }
+            if (comboBox1.SelectedItem.ToString() == "Corretor")
+            {
+                adm = false;
             }
         }
     }

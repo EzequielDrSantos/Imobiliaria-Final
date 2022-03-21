@@ -37,7 +37,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bunifuButton1
@@ -130,16 +130,6 @@
             this.label16.Size = new System.Drawing.Size(103, 16);
             this.label16.TabIndex = 259;
             this.label16.Text = "NºDE CLIENTE:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Teste"});
-            this.comboBox2.Location = new System.Drawing.Point(223, 233);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(161, 24);
-            this.comboBox2.TabIndex = 258;
             // 
             // label12
             // 
@@ -362,15 +352,23 @@
             this.textBox6.Size = new System.Drawing.Size(204, 22);
             this.textBox6.TabIndex = 260;
             // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(223, 235);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(171, 22);
+            this.textBox14.TabIndex = 261;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(518, 472);
+            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label13);
@@ -400,7 +398,6 @@
         #endregion
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label13;
@@ -417,5 +414,6 @@
         private System.Windows.Forms.Label label23;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox14;
     }
 }

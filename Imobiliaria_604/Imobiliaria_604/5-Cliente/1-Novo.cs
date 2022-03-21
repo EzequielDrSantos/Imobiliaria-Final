@@ -33,7 +33,7 @@ namespace Imobiliaria_604
             }
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            
         }
 
         
@@ -48,7 +48,7 @@ namespace Imobiliaria_604
         {
             try
             {
-                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, comboBox2.Text, Convert.ToInt32(textBox6.Text));
+                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToInt32(textBox6.Text));
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
@@ -56,7 +56,8 @@ namespace Imobiliaria_604
                 textBox5.Clear();
                 textBox1.Clear();
                 comboBox1.Items.Clear();
-                comboBox2.Items.Clear();
+                textBox14.Clear();
+                textBox6.Clear();
 
 
             }
