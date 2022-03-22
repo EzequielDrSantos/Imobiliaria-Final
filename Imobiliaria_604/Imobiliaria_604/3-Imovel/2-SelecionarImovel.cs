@@ -43,6 +43,7 @@ namespace Imobiliaria_604
             dataGridView1.Columns["Nfunc"].Visible = false;
             dataGridView1.Columns["Observacao"].Visible = false;
             dataGridView1.Columns["Imagem"].Visible = false;
+            dataGridView1.Columns["Atividade"].Visible = false;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

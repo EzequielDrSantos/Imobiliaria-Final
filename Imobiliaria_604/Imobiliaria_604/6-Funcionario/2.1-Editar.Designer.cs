@@ -51,6 +51,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label7
@@ -190,6 +191,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(456, 22);
             this.textBox2.TabIndex = 290;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label3
             // 
@@ -208,7 +210,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 22);
+            this.textBox1.Size = new System.Drawing.Size(139, 22);
             this.textBox1.TabIndex = 288;
             // 
             // bunifuButton1
@@ -286,6 +288,16 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 24);
             this.comboBox1.TabIndex = 307;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(347, 25);
+            this.textBox9.MaxLength = 9;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(166, 22);
+            this.textBox9.TabIndex = 308;
+            this.textBox9.Visible = false;
             // 
             // Form21
             // 
@@ -293,6 +305,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(518, 300);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox8);
@@ -343,5 +356,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }

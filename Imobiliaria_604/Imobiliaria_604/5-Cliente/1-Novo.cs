@@ -21,6 +21,10 @@ namespace Imobiliaria_604
 
         private void Form5_Load(object sender, EventArgs e)
         {
+
+            textBox7.Text = "True";
+
+
             int idClinete = (int)BLL.IdClinete.IdoCliente();
             if (idClinete == 0)
             {
@@ -48,7 +52,7 @@ namespace Imobiliaria_604
         {
             try
             {
-                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToInt32(textBox6.Text));
+                int x = BLL.Cliente.insertCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToBoolean(textBox7.Text));
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
@@ -57,7 +61,8 @@ namespace Imobiliaria_604
                 textBox1.Clear();
                 comboBox1.Items.Clear();
                 textBox14.Clear();
-                textBox6.Clear();
+                
+                this.Close();
 
 
             }
@@ -82,5 +87,23 @@ namespace Imobiliaria_604
                 e.Handled = true;
             }
         }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+       
     }
 }

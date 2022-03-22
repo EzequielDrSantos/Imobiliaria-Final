@@ -20,6 +20,7 @@ namespace Imobiliaria_604
 
         private void Form6_Load(object sender, EventArgs e)
         {
+            textBox7.Text = "True";
 
             textBox1.Text = "" + Global.row.Cells[0].Value;
             textBox2.Text = "" + Global.row.Cells[1].Value;
@@ -28,7 +29,7 @@ namespace Imobiliaria_604
             textBox5.Text = "" + Global.row.Cells[4].Value;
             comboBox1.Text = "" + Global.row.Cells[5].Value;
             textBox14.Text = "" + Global.row.Cells[6].Value;
-            textBox6.Text = "" + Global.row.Cells[7].Value;
+            
              
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             
@@ -44,15 +45,15 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            BLL.Cliente.updateCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToInt32(textBox6.Text));
+            BLL.Cliente.updateCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToBoolean(textBox7.Text));
             textBox2.Clear();
             textBox1.Clear();
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
-            textBox6.Clear();
             comboBox1.Items.Clear();
             textBox14.Clear();
+            this.Close();
         }
 
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
@@ -66,6 +67,22 @@ namespace Imobiliaria_604
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }

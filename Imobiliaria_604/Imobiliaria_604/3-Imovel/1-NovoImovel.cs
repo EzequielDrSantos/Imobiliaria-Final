@@ -80,7 +80,7 @@ namespace Imobiliaria_604
             byte[] foto = imgToByteArray(pictureBox1.Image);
             try
             {
-                BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.Text, textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
+                BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.Text, textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto, Convert.ToBoolean(textBox15.Text));
                 textBox2.Clear();
                 textBox1.Clear();
                 textBox3.Clear();
@@ -99,6 +99,7 @@ namespace Imobiliaria_604
                 textBox11.Clear();
                 textBox12.Clear();
                 textBox13.Clear();
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -108,24 +109,25 @@ namespace Imobiliaria_604
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            //Distrito
-            DataTable dis = BLL.Distrito.Distritos();
-            comboBox4.DataSource = dis;
-            comboBox4.DisplayMember = "NomeDistrito";
+            textBox15.Text = "True";
 
-            
+            //Distrito
+            //DataTable dis = BLL.Distrito.Distritos();
+            //comboBox4.DataSource = dis;
+            //comboBox4.DisplayMember = "NomeDistrito";
+
 
             //NºImvovel
-            int idImovel = (int)BLL.IdImovel.IdoImovel();
-            if (idImovel == 0)
-            {
-                textBox1.Text = "1";
-            }
-            else
-            {
-                idImovel = (int)BLL.IdImovel.IdoImovel();
-                textBox1.Text = "" + (idImovel + 1);
-            }
+            //int idImovel = (int)BLL.IdImovel.IdoImovel();
+            //if (idImovel == 0)
+            //{
+            //    textBox1.Text = "1";
+            //}
+            //else
+            //{
+            //    idImovel = (int)BLL.IdImovel.IdoImovel();
+            //    textBox1.Text = "" + (idImovel + 1);
+            //}
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -212,11 +214,6 @@ namespace Imobiliaria_604
                 e.Handled = true;
             }
             
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

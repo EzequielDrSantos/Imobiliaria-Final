@@ -24,6 +24,7 @@ namespace Imobiliaria_604
 
              dataGridView1.Columns["Cargo"].Visible = false;
             dataGridView1.Columns["Password"].Visible = false;
+            dataGridView1.Columns["Atividade"].Visible = false;
         }
         
 
@@ -39,9 +40,5 @@ namespace Imobiliaria_604
             this.Close();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

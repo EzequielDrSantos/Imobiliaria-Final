@@ -24,6 +24,7 @@ namespace Imobiliaria_604
 
             dataGridView1.Columns["Cargo"].Visible = false;
             dataGridView1.Columns["Password"].Visible = false;
+            dataGridView1.Columns["Atividade"].Visible = false;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

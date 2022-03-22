@@ -171,24 +171,6 @@
     <Compile Include="5-Cliente\2-SelecionarCliente.Designer.cs">
       <DependentUpon>2-SelecionarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="7-DT\1-Corretor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="7-DT\1-Corretor.Designer.cs">
-      <DependentUpon>1-Corretor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="7-DT\2-Cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="7-DT\2-Cliente.Designer.cs">
-      <DependentUpon>2-Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="7-DT\3-Imovel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="7-DT\3-Imovel.Designer.cs">
-      <DependentUpon>3-Imovel.cs</DependentUpon>
-    </Compile>
     <Compile Include="6-Funcionario\1-AdicionarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,15 +271,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="6-Funcionario\4-Procurar Funcionario.resx">
       <DependentUpon>4-Procurar Funcionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="7-DT\1-Corretor.resx">
-      <DependentUpon>1-Corretor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="7-DT\2-Cliente.resx">
-      <DependentUpon>2-Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="7-DT\3-Imovel.resx">
-      <DependentUpon>3-Imovel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

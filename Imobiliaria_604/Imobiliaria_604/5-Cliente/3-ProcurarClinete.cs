@@ -29,6 +29,7 @@ namespace Imobiliaria_604
         private void Form8_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = BLL.Cliente.Load();
+            dataGridView1.Columns["Atividade"].Visible = false;
         }
     }
 }

@@ -22,13 +22,8 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Tens certeza ??", "?", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes)
-            {
-                int x = BLL.Imovel.deleteImovel(NºdoImovel);
-                dataGridView1.DataSource = BLL.Imovel.Load();
-
-            }
+            DialogResult res = MessageBox.Show("TTEM CETEZA ?", "?", MessageBoxButtons.YesNo);
+           
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

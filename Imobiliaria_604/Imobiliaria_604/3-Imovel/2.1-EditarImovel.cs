@@ -51,10 +51,12 @@ namespace Imobiliaria_604
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            textBox15.Text = "True";
+
             //Distrito
-            DataTable dis = BLL.Distrito.Distritos();
-            comboBox4.DataSource = dis;
-            comboBox4.DisplayMember = "NomeDistrito";
+            //DataTable dis = BLL.Distrito.Distritos();
+            //comboBox4.DataSource = dis;
+            //comboBox4.DisplayMember = "NomeDistrito";
 
             textBox1.Text= "" + Global.row.Cells[0].Value;
             textBox2.Text = "" + Global.row.Cells[1].Value;
@@ -106,13 +108,13 @@ namespace Imobiliaria_604
           //  byte[] foto = ImageToByteArray(pictureBox2.Image);
             if (nvimg)
             {
-                BLL.Imovel.updateNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto);
+                BLL.Imovel.updateNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto, Convert.ToBoolean(textBox15.Text));
             }
             else
             {
 
           
-            BLL.Imovel.updateNvImovel2(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text);
+            BLL.Imovel.updateNvImovel2(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.SelectedIndex.ToString(), textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, Convert.ToBoolean(textBox15.Text));
              }
             textBox2.Clear();
             textBox1.Clear();
@@ -127,11 +129,11 @@ namespace Imobiliaria_604
             comboBox2.Items.Clear();
             textBox10.Clear();
             comboBox3.Items.Clear();
-            comboBox4.Items.Clear();
             textBox14.Clear();
             textBox11.Clear();  
             textBox12.Clear();
             textBox13.Clear();
+            this.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

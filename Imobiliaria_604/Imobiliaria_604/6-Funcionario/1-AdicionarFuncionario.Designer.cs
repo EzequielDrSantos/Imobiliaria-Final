@@ -51,6 +51,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label16
@@ -146,6 +147,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(456, 22);
             this.textBox2.TabIndex = 267;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label3
             // 
@@ -289,12 +291,22 @@
             this.label7.TabIndex = 286;
             this.label7.Text = "PASSWORD:";
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(267, 30);
+            this.textBox9.MaxLength = 9;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(166, 22);
+            this.textBox9.TabIndex = 287;
+            this.textBox9.Visible = false;
+            // 
             // Form13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(518, 310);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -344,5 +356,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }

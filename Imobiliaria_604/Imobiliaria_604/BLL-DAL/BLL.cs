@@ -84,7 +84,7 @@ namespace BusinessLogicLayer
                 return dal.executarReader("select * from NvImovel ", null);
             }
 
-            static public int insertNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito, string Cidade, string TipoImovel, string Para, string Preco, string Nfunc, string Observacao, byte[] Imagem)
+            static public int insertNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito, string Cidade, string TipoImovel, string Para, string Preco, string Nfunc, string Observacao, byte[] Imagem, bool Atividade)
             {
 
                 DAL dal = new DAL();
@@ -109,16 +109,17 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Preco", Preco),
                                 new SqlParameter("@Nfunc", Nfunc),
                                 new SqlParameter("@Observacao", Observacao),
-                                new SqlParameter("@Imagem", Imagem)
+                                new SqlParameter("@Imagem", Imagem),
+                                new SqlParameter("@Atividade", Atividade)
             };
                 return dal.executarNonQuery("INSERT into NvImovel (NºdoImovel, Morada, Numero, Andar, CodigoPostal, " +
                     "AreaTotal, AreaBruta, Quarto, CasaDebanho, Elevador, Estacionamento, Eficiencia, AnoConstrucao, Distrito, " +
-                    "Cidade, TipoImovel, Para, Preco, Nfunc, Observacao, Imagem) " +
+                    "Cidade, TipoImovel, Para, Preco, Nfunc, Observacao, Imagem, Atividade) " +
                     "VALUES(@NºdoImovel, @Morada, @Numero, @Andar, @CodigoPostal, @AreaTotal, @AreaBruta, @Quarto," +
                     " @CasaDebanho, @Elevador, @Estacionamento, @Eficiencia, @AnoConstrucao, @Distrito, @Cidade, @TipoImovel, @Para, @Preco, " +
-                    "@Nfunc, @Observacao, @Imagem)", sqlParams);
+                    "@Nfunc, @Observacao, @Imagem, @Atividade)", sqlParams);
             }
-            static public int updateNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito ,string Cidade, string TipoImovel, string Para, string Preco, string Nfunc, string Observacao, byte[] Imagem)
+            static public int updateNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito ,string Cidade, string TipoImovel, string Para, string Preco, string Nfunc, string Observacao, byte[] Imagem,bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -142,19 +143,20 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Preco", Preco),
                                 new SqlParameter("@Nfunc", Nfunc),
                                 new SqlParameter("@Observacao", Observacao),
-                                new SqlParameter("@Imagem", Imagem)
+                                new SqlParameter("@Imagem", Imagem),
+                                new SqlParameter("@Atividade", Atividade)
                         };
                 return dal.executarNonQuery("update [NvImovel] set [NºdoImovel]=@NºdoImovel, " +
                     "[Morada]=@Morada, [Numero]=@Numero, [Andar]=@Andar, [CodigoPostal]=@CodigoPostal, " +
                     " [AreaTotal]=@AreaTotal, [AreaBruta]=@AreaBruta, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia, " +
                     "[AnoConstrucao]=@AnoConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
-                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao, [Imagem]=@Imagem where [NºdoImovel]=@NºdoImovel", sqlParams);
+                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao, [Imagem]=@Imagem, [Atividade]=@Atividade WHERE[NºdoImovel]=@NºdoImovel", sqlParams);
             }
 
             static public int updateNvImovel2(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal,
                string AreaBruta, string AreaTotal, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito,
                string Cidade, string TipoImovel, string Para, string Preco, string Nfunc,
-               string Observacao)
+               string Observacao, bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -177,23 +179,15 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@Para", Para),
                                 new SqlParameter("@Preco", Preco),
                                 new SqlParameter("@Nfunc", Nfunc),
-                                new SqlParameter("@Observacao", Observacao)                              
+                                new SqlParameter("@Observacao", Observacao),
+                                new SqlParameter("@Atividade", Atividade)
                         };
                 return dal.executarNonQuery("update [NvImovel] set [NºdoImovel]=@NºdoImovel, " +
                     "[Morada]=@Morada, [Numero]=@Numero, [Andar]=@Andar, [CodigoPostal]=@CodigoPostal, " +
                     "[AreaBruta]=@AreaBruta, [AreaTotal]=@AreaTotal, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia, " +
                     "[AnoConstrucao]=@AnoConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
-                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao where [NºdoImovel]=@NºdoImovel", sqlParams);
-            }
-
-            static public int deleteImovel(int NºdoImovel)
-            {
-                DAL dal = new DAL();
-                SqlParameter[] sqlParams = new SqlParameter[]{
-                new SqlParameter("@NºdoImovel", NºdoImovel)
-            };
-                return dal.executarNonQuery("Delete From Cliente WHERE[NºdoImovel]@NºdoImovel", sqlParams);
-            }
+                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao, [Atividade]=@Atividade WHERE [NºdoImovel]=@NºdoImovel", sqlParams);
+            }  
         }
 
         public class Cliente
@@ -204,7 +198,7 @@ namespace BusinessLogicLayer
                 return dal.executarReader("select * from Cliente ", null);
             }
 
-            static public int insertCliente(int IdCliente, string Nome, string Email, int Telefone, int CC, string Distrito, string Cidade, int Nfunc)
+            static public int insertCliente(int IdCliente, string Nome, string Email, int Telefone, int CC, string Distrito, string Cidade, bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -215,12 +209,12 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@CC", CC),
                                 new SqlParameter("@Distrito", Distrito),
                                 new SqlParameter("@Cidade", Cidade),
-                                new SqlParameter("@Nfunc", Nfunc)
+                                new SqlParameter("@Atividade", Atividade)
             };
-                return dal.executarNonQuery("INSERT into Cliente (IdCliente, Nome, Email, Telefone, CC, Distrito , Cidade, Nfunc) " +
-                    "VALUES(@IdCliente, @Nome, @Email, @Telefone, @CC, @Distrito , @Cidade, @Nfunc)", sqlParams);
+                return dal.executarNonQuery("INSERT into Cliente (IdCliente, Nome, Email, Telefone, CC, Distrito , Cidade, Atividade) " +
+                    "VALUES(@IdCliente, @Nome, @Email, @Telefone, @CC, @Distrito , @Cidade, @Atividade)", sqlParams);
             }
-            static public int updateCliente(int IdClinete, string Nome, string Email, int Telefone, int CC, string Distrito, string Cidade, int Nfunc)
+            static public int updateCliente(int IdClinete, string Nome, string Email, int Telefone, int CC, string Distrito, string Cidade, bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -231,19 +225,10 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@CC", CC),
                                 new SqlParameter("@Distrito", Distrito),
                                 new SqlParameter("@Cidade", Cidade),
-                                new SqlParameter("@Nfunc", Nfunc)
-                               
-                        };
-                return dal.executarNonQuery("update [Cliente] set [IdCliente]=@IdCliente, [Nome]=@Nome,  [Email]=@Email, [Telefone]=@Telefone, [CC]=@CC,  [Distrito]=@Distrito, [Cidade]=@Cidade where [IdCliente]=@IdCliente  ", sqlParams);
-            }
+                                new SqlParameter("@Atividade", Atividade)
 
-            static public int deleteCliente(int IdCliente)
-            {
-                DAL dal = new DAL();
-                SqlParameter[] sqlParams = new SqlParameter[]{
-                new SqlParameter("@IdClinete", IdCliente)
-            };
-                return dal.executarNonQuery("Delete From Cliente WHERE[IdCliente]@IdCliente", sqlParams);
+                        };
+                return dal.executarNonQuery("update [Cliente] set [IdCliente]=@IdCliente, [Nome]=@Nome,  [Email]=@Email, [Telefone]=@Telefone, [CC]=@CC,  [Distrito]=@Distrito, [Cidade]=@Cidade, [Atividade]=@Atividade WHERE [IdCliente]=@IdCliente  ", sqlParams);
             }
         }
 
@@ -255,7 +240,7 @@ namespace BusinessLogicLayer
                 return dal.executarReader("select * from Funcionario ", null);
             }
 
-            static public int insertFuncionario(int Nfunc, string Nome, string Email, int Telefone, int CC, int NIF, int NIB, bool Cargo, string Password)
+            static public int insertFuncionario(int Nfunc, string Nome, string Email, int Telefone, int CC, int NIF, int NIB, bool Cargo, string Password, bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -267,12 +252,13 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@NIF", NIF),
                                 new SqlParameter("@NIB", NIB),
                                 new SqlParameter("@Cargo", Cargo),
-                                new SqlParameter("@Password", Password)
+                                new SqlParameter("@Password", Password),
+                                new SqlParameter("@Atividade", Atividade)
             };
-                return dal.executarNonQuery("INSERT into Funcionario (Nfunc, Nome, Email, Telefone, CC, NIF, NIB, Cargo, Password) " +
-                    "VALUES(@Nfunc, @Nome, @Email, @Telefone, @CC, @NIF , @NIB, @Cargo, @Password)", sqlParams);
+                return dal.executarNonQuery("INSERT into Funcionario (Nfunc, Nome, Email, Telefone, CC, NIF, NIB, Cargo, Password, Atividade) " +
+                    "VALUES(@Nfunc, @Nome, @Email, @Telefone, @CC, @NIF , @NIB, @Cargo, @Password, @Atividade)", sqlParams);
             }
-            static public int updateFuncionario(int Nfunc, string Nome, string Email, int Telefone, int CC, int NIF, int NIB, string Cargo, string Password)
+            static public int updateFuncionario(int Nfunc, string Nome, string Email, int Telefone, int CC, int NIF, int NIB, bool Cargo, string Password, bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -284,19 +270,11 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@NIF", NIF),
                                 new SqlParameter("@NIB", NIB),
                                 new SqlParameter("@Cargo", Cargo),
-                                new SqlParameter("@Password", Password)
+                                new SqlParameter("@Password", Password),
+                                new SqlParameter("@Atividade", Atividade)
                         };
-                return dal.executarNonQuery("update [Funcionario] set [Nfunc]=@Nfunc, [Nome]=@Nome,  [Email]=@Email, [Telefone]=@Telefone, [CC]=@CC,  [NIF]=@NIF, [NIB]=@NIB, [Cargo]=@Cargo, [Password]=@Password  where [Nfunc]=@Nfunc ", sqlParams);
-            }
-
-            static public int deleteFuncionario(int Nfunc)
-            {
-                DAL dal = new DAL();
-                SqlParameter[] sqlParams = new SqlParameter[]{
-                new SqlParameter("@Nfunc", Nfunc)
-            };
-                return dal.executarNonQuery("Delete From Funcionario WHERE [Nfunc]@Nfunc", sqlParams);
-            }
+                return dal.executarNonQuery("update [Funcionario] set [Nfunc]=@Nfunc, [Nome]=@Nome,  [Email]=@Email, [Telefone]=@Telefone, [CC]=@CC,  [NIF]=@NIF, [NIB]=@NIB, [Cargo]=@Cargo, [Password]=@Password, [Atividade]=@Atividade where [Nfunc]=@Nfunc ", sqlParams);
+            }           
         }
 
         public class IdImovel
@@ -335,29 +313,29 @@ namespace BusinessLogicLayer
             }
         }
 
-        public class Distrito
-        {
-            static public DataTable Distritos()
-            {
-                DAL dal = new DAL();
-                SqlParameter[] sqlParams = new SqlParameter[]{
+        //public class Distrito
+        //{
+        //    static public DataTable Distritos()
+        //    {
+        //        DAL dal = new DAL();
+        //        SqlParameter[] sqlParams = new SqlParameter[]{
 
-                };
-                return dal.executarReader("select NomeDistrito from Distrito ", sqlParams);
-            }
-        }
+        //        };
+        //        return dal.executarReader("select NomeDistrito from Distrito ", sqlParams);
+        //    }
+        //}
 
-        public class Conselho
-        {
-            static public DataTable Conselhoo(int IDistrito)
-            {
-                    DAL dal = new DAL();
-                SqlParameter[] sqlParams = new SqlParameter[]{
-                                new SqlParameter("@IDistrito", IDistrito ),
-                };
-                return dal.executarReader("select Conselho from Conselhos WHERE IDistrito=@IDistrito", sqlParams);
-            }
-        }
+        //public class Conselho
+        //{
+        //    static public DataTable Conselhoo(int IDistrito)
+        //    {
+        //            DAL dal = new DAL();
+        //        SqlParameter[] sqlParams = new SqlParameter[]{
+        //                        new SqlParameter("@IDistrito", IDistrito ),
+        //        };
+        //        return dal.executarReader("select Conselho from Conselhos WHERE IDistrito=@IDistrito", sqlParams);
+        //    }
+        //}
 
  }
  }

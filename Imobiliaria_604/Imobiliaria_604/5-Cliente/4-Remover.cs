@@ -26,13 +26,8 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Tens certeza madje??", "?", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes)
-            {
-                int x = BLL.Cliente.deleteCliente(IdCliente);
-                dataGridView1.DataSource = BLL.Cliente.Load();
-
-            }
+            DialogResult res = MessageBox.Show("TEM CERTEZA ?", "?", MessageBoxButtons.YesNo);
+            
         }
 
         private void Form7_Load(object sender, EventArgs e)

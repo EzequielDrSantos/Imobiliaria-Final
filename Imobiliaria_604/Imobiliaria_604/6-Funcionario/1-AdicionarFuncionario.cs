@@ -21,13 +21,9 @@ namespace Imobiliaria_604
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-
-          
-
-
             try
             {
-                int x = BLL.Funcionario.insertFuncionario(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text), Convert.ToInt32(textBox5.Text), adm, textBox8.Text);
+                int x = BLL.Funcionario.insertFuncionario(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text), Convert.ToInt32(textBox5.Text), adm, textBox8.Text, Convert.ToBoolean(textBox9.Text));
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
@@ -47,6 +43,9 @@ namespace Imobiliaria_604
 
         private void Form13_Load(object sender, EventArgs e)
         {
+            textBox9.Text = "True";
+
+
             int idClinete = (int)BLL.IdFuncionario.IdoFuncionario();
             if (idClinete == 0)
             {
@@ -111,6 +110,14 @@ namespace Imobiliaria_604
             if (comboBox1.SelectedItem.ToString() == "Corretor")
             {
                 adm = false;
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

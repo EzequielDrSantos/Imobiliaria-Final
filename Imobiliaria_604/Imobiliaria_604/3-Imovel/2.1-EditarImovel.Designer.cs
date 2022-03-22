@@ -88,6 +88,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -296,6 +297,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox15);
             this.groupBox1.Controls.Add(this.textBox14);
             this.groupBox1.Controls.Add(this.bunifuButton2);
             this.groupBox1.Controls.Add(this.comboBox3);
@@ -833,6 +835,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(376, 340);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(171, 22);
+            this.textBox15.TabIndex = 146;
+            this.textBox15.Visible = false;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -909,5 +920,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
