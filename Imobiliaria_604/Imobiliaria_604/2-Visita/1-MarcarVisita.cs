@@ -15,24 +15,7 @@ namespace Imobiliaria_604
 
 
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-            Form15 form15 = new Form15();
-            form15.Show();
-        }
-
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-            Form18 form18 = new Form18();
-            form18.Show();
-
-        }
-
-        private void bunifuButton3_Click(object sender, EventArgs e)
-        {
-            Form19 form19 = new Form19();
-            form19.Show();
-        }
+       
 
         private void bunifuButton4_Click(object sender, EventArgs e)
         {
@@ -45,6 +28,7 @@ namespace Imobiliaria_604
                 textBox3.Clear();
                 textBox4.Clear();
                 textBox5.Clear();
+                this.Close();
                 
 
             }
@@ -91,7 +75,7 @@ namespace Imobiliaria_604
             dataGridView3.Columns["TipoImovel"].Visible = false;
             dataGridView3.Columns["Para"].Visible = false;
             dataGridView3.Columns["Preco"].Visible = false;
-            dataGridView3.Columns["Nfunc"].Visible = false;
+            
             dataGridView3.Columns["Observacao"].Visible = false;
             dataGridView3.Columns["Imagem"].Visible = false;
             dataGridView3.Columns["Atividade"].Visible = false;

@@ -18,17 +18,12 @@ namespace Imobiliaria_604
             InitializeComponent();
         }
 
-        int IdVisita=0;
+      
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Tens certeza ??", "?", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes)
-            {
-                int x = BLL.Visita.deleteVisita(IdVisita);
-                dataGridView1.DataSource = BLL.Visita.Load();
-
-            }
+            DialogResult res = MessageBox.Show("TEM CERTEZA ?", "?", MessageBoxButtons.YesNo);
+           
         }
 
         private void CancelarVisita_Load(object sender, EventArgs e)

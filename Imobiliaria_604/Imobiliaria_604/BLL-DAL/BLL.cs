@@ -84,7 +84,7 @@ namespace BusinessLogicLayer
                 return dal.executarReader("select * from NvImovel ", null);
             }
 
-            static public int insertNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito, string Cidade, string TipoImovel, string Para, string Preco, string Nfunc, string Observacao, byte[] Imagem, bool Atividade)
+            static public int insertNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito, string Cidade, string TipoImovel, string Para, string Preco, string Observacao, byte[] Imagem, bool Atividade)
             {
 
                 DAL dal = new DAL();
@@ -107,19 +107,18 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@TipoImovel", TipoImovel),
                                 new SqlParameter("@Para", Para),
                                 new SqlParameter("@Preco", Preco),
-                                new SqlParameter("@Nfunc", Nfunc),
                                 new SqlParameter("@Observacao", Observacao),
                                 new SqlParameter("@Imagem", Imagem),
                                 new SqlParameter("@Atividade", Atividade)
             };
                 return dal.executarNonQuery("INSERT into NvImovel (NºdoImovel, Morada, Numero, Andar, CodigoPostal, " +
                     "AreaTotal, AreaBruta, Quarto, CasaDebanho, Elevador, Estacionamento, Eficiencia, AnoConstrucao, Distrito, " +
-                    "Cidade, TipoImovel, Para, Preco, Nfunc, Observacao, Imagem, Atividade) " +
+                    "Cidade, TipoImovel, Para, Preco, Observacao, Imagem, Atividade) " +
                     "VALUES(@NºdoImovel, @Morada, @Numero, @Andar, @CodigoPostal, @AreaTotal, @AreaBruta, @Quarto," +
                     " @CasaDebanho, @Elevador, @Estacionamento, @Eficiencia, @AnoConstrucao, @Distrito, @Cidade, @TipoImovel, @Para, @Preco, " +
-                    "@Nfunc, @Observacao, @Imagem, @Atividade)", sqlParams);
+                    "@Observacao, @Imagem, @Atividade)", sqlParams);
             }
-            static public int updateNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito ,string Cidade, string TipoImovel, string Para, string Preco, string Nfunc, string Observacao, byte[] Imagem,bool Atividade)
+            static public int updateNvImovel(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal, string AreaTotal, string AreaBruta, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito ,string Cidade, string TipoImovel, string Para, string Preco, string Observacao, byte[] Imagem,bool Atividade)
             {
                 DAL dal = new DAL();
                 SqlParameter[] sqlParams = new SqlParameter[]{
@@ -141,7 +140,6 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@TipoImovel", TipoImovel),
                                 new SqlParameter("@Para", Para),
                                 new SqlParameter("@Preco", Preco),
-                                new SqlParameter("@Nfunc", Nfunc),
                                 new SqlParameter("@Observacao", Observacao),
                                 new SqlParameter("@Imagem", Imagem),
                                 new SqlParameter("@Atividade", Atividade)
@@ -150,12 +148,12 @@ namespace BusinessLogicLayer
                     "[Morada]=@Morada, [Numero]=@Numero, [Andar]=@Andar, [CodigoPostal]=@CodigoPostal, " +
                     " [AreaTotal]=@AreaTotal, [AreaBruta]=@AreaBruta, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia, " +
                     "[AnoConstrucao]=@AnoConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
-                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao, [Imagem]=@Imagem, [Atividade]=@Atividade WHERE[NºdoImovel]=@NºdoImovel", sqlParams);
+                    "[Para]=@Para, [Preco]=@Preco, [Observacao]=@Observacao, [Imagem]=@Imagem, [Atividade]=@Atividade WHERE[NºdoImovel]=@NºdoImovel", sqlParams);
             }
 
             static public int updateNvImovel2(int NºdoImovel, string Morada, string Numero, string Andar, string CodigoPostal,
                string AreaBruta, string AreaTotal, string Quarto, string CasaDeBanho, bool Elevador, bool Estacionamento, string Eficiencia, string AnoConstrucao, string Distrito,
-               string Cidade, string TipoImovel, string Para, string Preco, string Nfunc,
+               string Cidade, string TipoImovel, string Para, string Preco,
                string Observacao, bool Atividade)
             {
                 DAL dal = new DAL();
@@ -178,7 +176,6 @@ namespace BusinessLogicLayer
                                 new SqlParameter("@TipoImovel", TipoImovel),
                                 new SqlParameter("@Para", Para),
                                 new SqlParameter("@Preco", Preco),
-                                new SqlParameter("@Nfunc", Nfunc),
                                 new SqlParameter("@Observacao", Observacao),
                                 new SqlParameter("@Atividade", Atividade)
                         };
@@ -186,7 +183,7 @@ namespace BusinessLogicLayer
                     "[Morada]=@Morada, [Numero]=@Numero, [Andar]=@Andar, [CodigoPostal]=@CodigoPostal, " +
                     "[AreaBruta]=@AreaBruta, [AreaTotal]=@AreaTotal, [Quarto]=@Quarto, [CasaDebanho]=@CasaDebanho, [Elevador]=@Elevador, [Estacionamento]=@Estacionamento, [Eficiencia]=@Eficiencia, " +
                     "[AnoConstrucao]=@AnoConstrucao, [Distrito]=@Distrito, [Cidade]=@Cidade, [TipoImovel]=@TipoImovel, " +
-                    "[Para]=@Para, [Preco]=@Preco, [Nfunc]=@Nfunc, [Observacao]=@Observacao, [Atividade]=@Atividade WHERE [NºdoImovel]=@NºdoImovel", sqlParams);
+                    "[Para]=@Para, [Preco]=@Preco, [Observacao]=@Observacao, [Atividade]=@Atividade WHERE [NºdoImovel]=@NºdoImovel", sqlParams);
             }  
         }
 

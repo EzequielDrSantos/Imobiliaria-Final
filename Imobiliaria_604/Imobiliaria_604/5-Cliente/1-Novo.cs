@@ -40,14 +40,6 @@ namespace Imobiliaria_604
             
         }
 
-        
-
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-            Form15 form15 = new Form15();
-            form15.Show();
-        }
-
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             try
@@ -90,10 +82,10 @@ namespace Imobiliaria_604
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-            }
+            //if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            //{
+            //    e.Handled = true;
+            //}
         }
 
         private void textBox14_KeyPress(object sender, KeyPressEventArgs e)

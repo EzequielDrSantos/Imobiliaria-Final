@@ -137,7 +137,7 @@
             // 
             this.novoToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.novoToolStripMenuItem2.Name = "novoToolStripMenuItem2";
-            this.novoToolStripMenuItem2.Size = new System.Drawing.Size(191, 36);
+            this.novoToolStripMenuItem2.Size = new System.Drawing.Size(224, 36);
             this.novoToolStripMenuItem2.Text = "Novo";
             this.novoToolStripMenuItem2.Click += new System.EventHandler(this.novoToolStripMenuItem2_Click);
             // 
@@ -145,7 +145,7 @@
             // 
             this.editarToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(191, 36);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(224, 36);
             this.editarToolStripMenuItem1.Text = "Editar";
             this.editarToolStripMenuItem1.Click += new System.EventHandler(this.editarToolStripMenuItem1_Click);
             // 
@@ -153,9 +153,8 @@
             // 
             this.removerToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.removerToolStripMenuItem1.Name = "removerToolStripMenuItem1";
-            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(191, 36);
+            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem1.Text = "Remover";
-            this.removerToolStripMenuItem1.Visible = false;
             this.removerToolStripMenuItem1.Click += new System.EventHandler(this.removerToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem1
@@ -174,7 +173,7 @@
             // 
             this.novoToolStripMenuItem3.ForeColor = System.Drawing.Color.White;
             this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
-            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(197, 36);
+            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(224, 36);
             this.novoToolStripMenuItem3.Text = "Novo";
             this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
             // 
@@ -182,7 +181,7 @@
             // 
             this.edittarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.edittarToolStripMenuItem.Name = "edittarToolStripMenuItem";
-            this.edittarToolStripMenuItem.Size = new System.Drawing.Size(197, 36);
+            this.edittarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.edittarToolStripMenuItem.Text = "Editar ";
             this.edittarToolStripMenuItem.Click += new System.EventHandler(this.edittarToolStripMenuItem_Click);
             // 
@@ -190,7 +189,7 @@
             // 
             this.procurarToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.procurarToolStripMenuItem1.Name = "procurarToolStripMenuItem1";
-            this.procurarToolStripMenuItem1.Size = new System.Drawing.Size(197, 36);
+            this.procurarToolStripMenuItem1.Size = new System.Drawing.Size(224, 36);
             this.procurarToolStripMenuItem1.Text = "Procurar";
             this.procurarToolStripMenuItem1.Click += new System.EventHandler(this.procurarToolStripMenuItem1_Click);
             // 
@@ -198,9 +197,8 @@
             // 
             this.removerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
-            this.removerToolStripMenuItem.Size = new System.Drawing.Size(197, 36);
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem.Text = "Remover ";
-            this.removerToolStripMenuItem.Visible = false;
             this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click);
             // 
             // funcionarioToolStripMenuItem

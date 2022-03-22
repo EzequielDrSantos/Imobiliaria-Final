@@ -144,7 +144,12 @@ namespace Imobiliaria_604
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            if (Global.adm ==false)
+            {
+                funcionarioToolStripMenuItem.Visible = false;
+                removerToolStripMenuItem1.Visible = false;
+                removerToolStripMenuItem.Visible=false;
+            }
         }
     }
 }

@@ -30,12 +30,14 @@ namespace Imobiliaria_604
                 MessageBox.Show("ERRO", "!");
 
             }
-
             else
             {
 
                 DataTable dt = BLL.login.loginUtilizador(Convert.ToInt32(textBox1.Text), textBox2.Text);
-                    if (dt.Rows.Count > 0)
+                    
+                
+                
+                if (dt.Rows.Count > 0)
                     {
                         Global.perfil = (String)dt.Rows[0][1];
                         Form2 f2 = new Form2();

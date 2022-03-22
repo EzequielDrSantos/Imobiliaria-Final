@@ -68,7 +68,7 @@ namespace Imobiliaria_604
             dataGridView3.Columns["TipoImovel"].Visible = false;
             dataGridView3.Columns["Para"].Visible = false;
             dataGridView3.Columns["Preco"].Visible = false;
-            dataGridView3.Columns["Nfunc"].Visible = false;
+      
             dataGridView3.Columns["Observacao"].Visible = false;
             dataGridView3.Columns["Imagem"].Visible = false;
             dataGridView3.Columns["Atividade"].Visible = false;

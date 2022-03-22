@@ -62,11 +62,7 @@ namespace Imobiliaria_604
             else {estacionamento = false; }
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-             Form15 form15 = new Form15();
-            form15.Show();
-        }
+        
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
@@ -80,7 +76,7 @@ namespace Imobiliaria_604
             byte[] foto = imgToByteArray(pictureBox1.Image);
             try
             {
-                BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.Text, textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox12.Text, textBox13.Text, foto, Convert.ToBoolean(textBox15.Text));
+                BLL.Imovel.insertNvImovel(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, elevador, estacionamento, comboBox3.Text, textBox10.Text, comboBox4.Text, textBox14.Text, checkedListBox1.Text, checkedListBox2.Text, textBox11.Text, textBox13.Text, foto, Convert.ToBoolean(textBox15.Text));
                 textBox2.Clear();
                 textBox1.Clear();
                 textBox3.Clear();
@@ -97,7 +93,7 @@ namespace Imobiliaria_604
                 comboBox4.Items.Clear();
                 textBox14.Clear();
                 textBox11.Clear();
-                textBox12.Clear();
+              
                 textBox13.Clear();
                 this.Close();
             }
@@ -118,16 +114,16 @@ namespace Imobiliaria_604
 
 
             //NºImvovel
-            //int idImovel = (int)BLL.IdImovel.IdoImovel();
-            //if (idImovel == 0)
-            //{
-            //    textBox1.Text = "1";
-            //}
-            //else
-            //{
-            //    idImovel = (int)BLL.IdImovel.IdoImovel();
-            //    textBox1.Text = "" + (idImovel + 1);
-            //}
+            int idImovel = (int)BLL.IdImovel.IdoImovel();
+            if (idImovel == 0)
+            {
+                textBox1.Text = "1";
+            }
+            else
+            {
+                idImovel = (int)BLL.IdImovel.IdoImovel();
+                textBox1.Text = "" + (idImovel + 1);
+            }
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;

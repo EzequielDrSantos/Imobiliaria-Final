@@ -35,14 +35,6 @@ namespace Imobiliaria_604
             
         }
 
-       
-
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-            Form15 form15 = new Form15();
-            form15.Show();
-        }
-
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             BLL.Cliente.updateCliente(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), comboBox1.Text, textBox14.Text, Convert.ToBoolean(textBox7.Text));

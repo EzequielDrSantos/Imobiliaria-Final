@@ -241,9 +241,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(47, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 16);
+            this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 247;
-            this.label3.Text = "NOME COMPLETO:\r\n";
+            this.label3.Text = "NOME :\r\n";
             // 
             // textBox1
             // 

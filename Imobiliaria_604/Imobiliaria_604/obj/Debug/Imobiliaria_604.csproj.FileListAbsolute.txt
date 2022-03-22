@@ -63,9 +63,6 @@ C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_60
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Login.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form5.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.CancelarVisita.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form15.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form18.resources
-C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Form19.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Properties.Resources.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.Resource1.resources
 C:\Users\ezequ\Documents\GitHub\Imobiliaria-Final\Imobiliaria_604\Imobiliaria_604\obj\Debug\Imobiliaria_604.csproj.GenerateResource.cache
