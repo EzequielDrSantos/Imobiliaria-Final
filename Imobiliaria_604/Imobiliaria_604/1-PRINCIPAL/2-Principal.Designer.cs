@@ -112,6 +112,7 @@
             this.cancelarVisitaToolStripMenuItem.Name = "cancelarVisitaToolStripMenuItem";
             this.cancelarVisitaToolStripMenuItem.Size = new System.Drawing.Size(274, 36);
             this.cancelarVisitaToolStripMenuItem.Text = "Cancelar Visita";
+            this.cancelarVisitaToolStripMenuItem.Visible = false;
             this.cancelarVisitaToolStripMenuItem.Click += new System.EventHandler(this.cancelarVisitaToolStripMenuItem_Click);
             // 
             // visitasMarcadasToolStripMenuItem
@@ -155,6 +156,7 @@
             this.removerToolStripMenuItem1.Name = "removerToolStripMenuItem1";
             this.removerToolStripMenuItem1.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem1.Text = "Remover";
+            this.removerToolStripMenuItem1.Visible = false;
             this.removerToolStripMenuItem1.Click += new System.EventHandler(this.removerToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem1
@@ -199,6 +201,7 @@
             this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
             this.removerToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem.Text = "Remover ";
+            this.removerToolStripMenuItem.Visible = false;
             this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click);
             // 
             // funcionarioToolStripMenuItem
@@ -217,7 +220,7 @@
             // 
             this.adicionarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.adicionarToolStripMenuItem.Name = "adicionarToolStripMenuItem";
-            this.adicionarToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.adicionarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.adicionarToolStripMenuItem.Text = "Adicionar";
             this.adicionarToolStripMenuItem.Click += new System.EventHandler(this.adicionarToolStripMenuItem_Click);
             // 
@@ -225,7 +228,7 @@
             // 
             this.editarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
@@ -233,7 +236,7 @@
             // 
             this.procurarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.procurarToolStripMenuItem.Name = "procurarToolStripMenuItem";
-            this.procurarToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.procurarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.procurarToolStripMenuItem.Text = "Procurar";
             this.procurarToolStripMenuItem.Click += new System.EventHandler(this.procurarToolStripMenuItem_Click);
             // 
@@ -241,8 +244,9 @@
             // 
             this.removerToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.removerToolStripMenuItem2.Name = "removerToolStripMenuItem2";
-            this.removerToolStripMenuItem2.Size = new System.Drawing.Size(200, 36);
+            this.removerToolStripMenuItem2.Size = new System.Drawing.Size(224, 36);
             this.removerToolStripMenuItem2.Text = "Remover";
+            this.removerToolStripMenuItem2.Visible = false;
             this.removerToolStripMenuItem2.Click += new System.EventHandler(this.removerToolStripMenuItem2_Click);
             // 
             // pictureBox1

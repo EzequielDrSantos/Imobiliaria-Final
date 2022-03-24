@@ -310,6 +310,19 @@ namespace BusinessLogicLayer
             }
         }
 
+        public class Atividade
+        {
+            static public Object AtividadeAt()
+            {
+                DAL dal = new DAL();
+                SqlParameter[] sqlParams = new SqlParameter[]{
+
+                };
+                return dal.executarScalar("select Atividade from Funcionario ", sqlParams);
+            }
+        }
+
+
         //public class Distrito
         //{
         //    static public DataTable Distritos()
@@ -334,7 +347,7 @@ namespace BusinessLogicLayer
         //    }
         //}
 
- }
+    }
  }
 
     
